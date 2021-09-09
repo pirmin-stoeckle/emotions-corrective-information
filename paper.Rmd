@@ -1,0 +1,448 @@
+---
+title: "Emotional framing and the effectiveness of corrective information^[I thank Thomas Bräuninger, Sebastian Juhl, the GIP team, and participants of the CDSS workshop in political science for excellent comments and helpful suggestions on this study. This work was supported by the German Research Foundation (DFG) via the Collaborative Research Center (SFB) 884 on ``The Political Economy of Reforms'' (Project C2) and the University of Mannheim’s Graduate School of Economics and Social Sciences.]"
+author: |
+  | Pirmin Stöckle^[Corresponding address: pirmin.stoeckle@gess.uni-mannheim.de]
+  | GESS and SFB 884, University of Mannheim
+date: \today
+linestretch: 1.2
+colorlinks: true
+abstract: \setstretch{1} \noindent Concerns about various forms of misinformation and its fast dissemination through online media have generated huge interest into ways to effectively correct false claims. An under-explored mechanism in this research is the role of distinct emotions. How do emotional appeals interact with corrective information? Specifically, I focus on the emotion of disgust, which has been shown to be linked to the moralization of attitudes, which in turn reduces the impact of empirical evidence on attitudes and makes compromise less likely. Substantively, I investigate the issue of genetically modified (GM) food. I implement a pre-registered survey experiment within a panel study based on a probability sample of the general population in Germany (N = 4,000). Results show what we have learned about the question. This study provides evidence on the effect of emotionally charged disinformation on perceptions of GM food, and ways to effectively correct false claims. In a broader perspective, these results inform further studies and policy interventions on other issues where disinformation loads on strong emotions, ranging from social policy over immigration to health interventions such as vaccinations. \vspace{.8cm}
+
+bibliography: references.bib
+csl: american-journal-of-political-science.csl
+output:
+  bookdown::pdf_document2:
+    toc: no
+    keep_tex: true
+mainfont: Times New Roman
+sansfont: Times New Roman
+fontsize: 12pt
+link-citations: true
+documentclass: article
+geometry: margin=1in
+always_allow_html: yes
+
+---
+
+```{r, include=FALSE}
+# packages
+library(tidyverse)
+library(broom)
+library(scales)
+library(modelsummary)
+library(gridExtra)
+library(jtools)
+library(tidyverse)
+library(sjmisc)
+library(scales)
+```
+
+
+\newpage
+# Introduction
+<!-- Guiding Question about people, not scholars! -->
+How do emotional appeals interact with corrective information?
+<!-- context on misinformation and the important role of emotions in spreading it -->
+Fueled by the fast dissemination through digital media, the issue of various forms of misinformation has become a major concern both in academia and for public policy [@jerit2020political; @lazer2018science; @lewandowsky2012misinformation; @wardle2017information].
+To limit the danger from inaccurate or misleading information, efforts of fact-checking or corrective information more generally are widely applied [@walter2020fact]. A common finding in the maturing literature on corrective information is that these interventions are usually successful in reducing misperceptions, but may not translate to other outcomes such as attitudes, candidate evaluations or blame attribution [@bisgaard2019getting; @nyhan2019taking; @swire2019they; @thorson2016belief].
+
+<!-- % still, we know little about the role of discrete emotions in interacting with misinformation and corrective information -->
+While this has been linked to affect [@thorson2016belief], the connection of distinct emotions to both susceptibility to misinformation, and the effectiveness of corrective information is under-explored (exceptions include [@ecker2011terrorists; @martel2020reliance; @rosenzweig2020misinformation; @weeks2015emotions]. This is unfortunate given the important role that emotional appeals play in the dissemination of false or misleading information. We know that false news spread faster than true news, possibly because they are more likely to evoke emotions of surprise and disgust [@vosoughi2018spread]. In general, moral-emotional language is rewarded on social media [@brady2017emotion] and populist parties use more negative emotional appeals in their communication than non-populist parties [@widmann2021how].
+
+<!-- % emotion in political science -->
+Emotions certainly play an important role in politics [@redlawsk2006feeling], and approaches such as cognitive appraisal theory [@moors2013appraisal] or affective intelligence theory [@marcus2000affective; @marcus2019applying] provide frameworks for empirical expectaitoins about specific emotions. 
+In this study, I follow recent work in political science inspired by moral psychology. Most relevant for this study, @clifford2019emotional finds that a persuasive emotional frame loading on emotions of anger and disgust increases the perception of an issue as being one of moral conviction [@skitka2020psychology; @wisneski2017moralization]. 
+Moral conviction, i.e. the conviction that the handling of an issue touches morality and is about fundamental right or wrong, can be seen as a dimension of attitude strength [@skitka2018attitude]. 
+While it is often seen as a binary categorization whether or not an issue is a moral one, there is quite some variation in the extent of moralization within issues [@ryan2014reconsidering] with distinct behavioral consequences, such as an absolute unwillingness to compromise [@ryan2017no] or a tendency to view that issue in absolutist term and to be less likely to be open for information about consequences [@ryan2019actions]. 
+
+<!-- % get more concrete linking belief echoes / affective perseverance and specific emotion with possible connection to moralization -->
+In his study, Clifford shows that disgust-evoking messages can increase moral conviction with its consequences on polarizing attitudes. However, some of the treatment material used in his study comes from a later retracted study linking GMO and cancer. Such a piece of information can be classified as misinformation in the sense of going against ``best available evidence in the public sphere''[@flynn2017nature, p.128].
+From findings of belief echoes [@thorson2016belief] and affective perseverance [@sherman2002affective] we might suspect that such emotional effects of frames may persist even in the face of successful factual correction.
+
+<!-- % Contribution bringing belief echoes and discrete emotions together -->
+This study contributes to the literature of corrective information by linking the concept of belief echoes to the perseverance of specific emotions with related consequences on attitudes. Specifically, it provides evidence on the effect of emotionally charged disinformation on perceptions of GM food, and ways to effectively correct false claims.
+
+<!-- % explain the relevance of GMO as an issue, also in realtion to moralization -->
+The topic of GM feed is particularly suited for this study because it is an issue where science and public opinion diverge considerably, implying a relevant role for corrective information [@diamond2020does, hasell2020differential, carnahan2019processing]. This is especially true within the German population, which is where this study draws its sample from [@gaskell2010europeans]. GM food is also a topic on which there are misperceptions, possibly due to disinformation. Of course, there is legitimate criticism on the use of genetic modification. However, studies show that extreme opponents of GM food know the least about it [@fernbach2019extreme], and a lack of acceptance of novel food technologies against scientific evidence can be seen as as a threat for the development of a more resilient food system [@siegrist2020consumer]. 
+
+<!-- % Final Punchline on broader relevance -->
+In the view of many scientists [@roberts2018nobel, planck2019scientists], genetic engineering provides avenues with large potential benefits, which may be impeded by public resistance possibly originating from misleading claims easily disseminated through online media.
+In a broader perspective, these results inform further studies and policy interventions on other issues where disinformation loads on strong emotions, ranging from social policy over immigration to health interventions such as vaccinations.
+
+
+
+# Theory
+
+## Misinformation and corrective information
+
+<!-- % some definitions from Kuklinski and Flynn to Jerit -->
+
+<!-- % information corrects factual beliefs, but the effects of information on attitudes are mixed -->
+
+Factual beliefs are affected in the direction of presented evidence for both (a) misinformation and (b) corrective information.
+
+The effects on related opinions are much less clear.
+Some studies find effects, some not.
+
+Affective responses are at least implicitly discussed in this literature, but discrete emotions are widely neglected.
+
+## Emotions and political learning
+
+<!-- % From Vasiloupolou / Wagner -->
+<!-- %Early research into emotional reactions either used one simple positive–negative dimension or a two-dimensional valence model (Marcus, 2003; Marcus et al., 2000). More recently, researchers have argued that distinct emotions may characterise individuals’ reactions (e.g. Huddy et al., 2007; Larsen and McGraw, 2011; Petersen, 2010; Smith et al., 2008; Valentino et al., 2008, 2011; Weber, 2012; see also Conover and Feldman, 1986). Appraisal theories of emotions suggest that various distinct emotions arise due to individuals’ cognitive interpretation of the situation they experience (e.g. Roseman, 1991; Smith and Ellsworth, 1985; for a review, see Brader and Marcus, 2013). Neuroscientific theories based on the neural processes that generate emotional responses have also increasingly turned towards a three-dimensional model of emotions that distinguishes between fear, anger and enthusiasm (Brader and Marcus, 2013; Lerner and Keltner, 2001). Research in political psychology building on both appraisal and neural process theories has therefore focused in particular on the causes and consequences of anger, fear1 and enthusiasm as distinct emotions (Carver and Harmon-Jones, 2009; Conover and Feldman, 1986; Huddy et al., 2005, 2007; Lerner and Keltner, 2000, 2001; Petersen, 2010; Smith and Ellsworth, 1985; Valentino et al., 2011). -->
+<!-- % -->
+<!-- %Applied to political phenomena, distinct emotions cause different types of actions and attitudes: fear leads to caution and openness, and anger to more confident and aggressive responses (Druckman and McDermott, 2008; MacKuen et al., 2010). For instance, whereas fear and anger both tend to increase intolerance and threat perceptions (e.g. Erişen and Kentmen-Cin, 2017), they lead to distinct ways of reacting to terrorist threats (Lerner et al., 2003). Fearful citizens are more wary of the increased risk and turn to isolationism, while angry citizens are less risk-averse and tend to favour pro-active intervention (Huddy et al., 2007). Anxious citizens are also more likely to seek out new information and process this carefully (Brader et al., 2008; Marcus et al., 2000; Merolla and Zechmeister, 2009; Valentino et al., 2008). Finally, enthusiasm increases the willingness to participate in politics, but like anger it also increases less careful forms of information-processing (Brader, 2006; Marcus et al., 2000). -->
+
+
+Although there is a rich literature on emotions in politics shedding light on its effect on information processing, political learning and participation, the connection of distinct emotions to both susceptibility to misinformation and the effectiveness of corrective information is under-explored.
+
+Research has shown that... anger... anxiety... enthusiasms...
+
+A recently growing interest is in disgust.
+Connection to morality, relevant for immigration, homeless ...
+
+A study has shown that moral shock works to moralize attitudes towards GM food.
+However, the main part of the material used there can be classified as misinformation
+GM food is an issue on which disinformation exists. This does not mean that there can or should be no criticism, but concrete adverse health effects are not warranted by evidence. Least knowledgeable people are the fiercest opponents. So
+
+
+
+## Hypotheses
+
+From findings on moral conviction and how emotional frames induce it [@clifford2019emotional; @wisneski2017moralization], I expect that a persuasive message evoking negative emotions, notably disgust and anger, can increase perceptions of the respective issue as being one of moral conviction. In order to count as a persuasive message, I expect the message to affect both factual beliefs and policy opinions in its direction.
+
+* H1 A persuasive, emotionally framed message evoking negative emotions of disgust and anger makes individuals more likely to favor policy restrictions on the respective issue and to perceive the issue as one of moral conviction.
+
+
+
+<!-- % Moderation -->
+
+<!-- % possible theoretical contribution by categorizing different emotion effects -->
+<!-- %To categorize effects of emotions within the context mis- and corrective information, there are two general ways in which emotions may affect its effectiveness. In both cases, one can further differentiate between cases where the emotion is invoked by, or at least closely tied to, the object that is part of the information (integral emotion), and cases where the emotion is induced irrespective of the piece of information (incidental emotion, often also referred to as mood). Emotion as moderator. emotions affect information processing so also for misinformation and corrective information. But anxiety, anger and disgust word in different directions... emotion within fake news, see Martel. Emotion as outcome -->
+
+Concerning the impact of corrective information, I expect that it will be effective in reducing factual misperceptions, irrespective of the presence of evoked emotions. This is in line with previous research showing no moderation effect on corrections due to emotional framing  [@ecker2011terrorists].
+
+
+* H2a Corrective information is effective in eliminating the misinformation effect on factual beliefs.
+
+
+<!-- % Belief echoes and affective perseverance -->
+
+However, similar to previous results on affective perseverance [@sherman2002affective] and belief echoes [@thorson2016belief], I expect the effects of emotionally framed misinformation on policy opinion, moral conviction, and emotions to persist even in the face of effective factual correction.
+
+
+* H2b The emotionally framed misinformation leaves an impact on policy opinions, moral conviction, and emotions.
+
+
+Together, hypotheses 2a and 2b represent the existence of a ``belief echo'', i.e. the continued effect of a piece of misinformation on attitudinal or emotional outcomes, despite successful factual correction. If only H2a is supported, the correction is altogether successful. 
+
+<!-- % Counter-framing -->
+
+Corrective information such as fact-checking is usually deliberately presented in a rather neutral way. In the case of strongly emotional framed misinformation, such a neutral correction may thus be successful in correcting factual beliefs, but not be able to counter the emotional impact of the misinformation. If this is the case, a more effective strategy may be to counter the emotional misinformation not with a neutral correction but with a correction embedded in an emotional counter-frame. If equally persuasive, such counterframes have been shown to negate the effect of an original frame [@chong2013counterframing]. I expect a similar effect to hold in response to emotionally framed misinformation.
+
+
+* H3 A correction embedded in a persuasive emotional counter-frame eliminates the misinformation effect on policy opinions, moral conviction, and emotions.
+
+<!-- %Visual cues relate to \citep{hameleers2020picture} and \citep{powell2021selection} -->
+
+## GMO - a case for emotional reactions and misinformation
+
+
+# Data & Methods
+
+# Results
+
+## Descriptives
+
+```{r, warning=FALSE, echo=FALSE}
+# load data
+source("data-preparation.R")
+```
+
+
+```{r, warning=FALSE, echo=FALSE}
+# only control group
+
+descriptives_control <- data %>% 
+  filter(exp_group == "control") %>% 
+  select("Anger" = "anger",
+         "Anxiety" = "anxiety",
+         "Disgust" = "disgust",
+         "Sadness" = "sadness",
+         "Belief GMO safety" = "knowledge_safe", 
+         "Policy restrictions" = "policy_opinion",
+         "Moral conviction" = "moral_conviction")
+
+datasummary_skim(descriptives_control)
+
+```
+
+## Moralization
+
+
+```{r, echo = FALSE}
+# linear regression models with 0-1 rescaled DV
+lm_knowledge_safe <- lm(rescale(knowledge_safe) ~ exp_group, data)
+lm_policy_opinion <- lm(rescale(policy_opinion) ~ exp_group, data)
+lm_moral_conviction <- lm(rescale(moral_conviction) ~ exp_group, data)
+
+lm_emotion_disgust <- lm(rescale(disgust) ~ exp_group, data)
+lm_emotion_anger <- lm(rescale(anger) ~ exp_group, data)
+lm_emotion_anxiety <- lm(rescale(anxiety) ~ exp_group, data)
+lm_emotion_sadness <- lm(rescale(sadness) ~ exp_group, data)
+
+
+# define functions
+# function to get coefficients for plotting
+get_pdata <- function(model, positions = c(), label = NA) {
+  df <- data.frame(summary(model)$coefficients[positions,],
+                   group = str_remove(rownames(summary(model)$coefficients[positions,]), "exp_group"),
+                   outcome = label)
+  df$group <- fct_inorder(df$group)
+  df$outcome <- fct_inorder(df$outcome)
+  names(df) <- c("estimate", "se", "t", "p", "group", "outcome")
+  df$lower <- df$estimate - 1.96*df$se
+  df$upper <- df$estimate + 1.96*df$se
+  row.names(df) <- NULL
+  return(df)
+}
+
+```
+
+
+```{r, echo = FALSE}
+# H1: misinformation effect
+pdata_h1_belief_policy <- rbind(get_pdata(lm_moral_conviction, c(4, 7), "Moral conviction"),
+                                get_pdata(lm_policy_opinion, c(4, 7), "Policy restrictions"),
+                                get_pdata(lm_knowledge_safe, c(4, 7), "Belief GMO safety"))
+
+pdata_h1_emotions <- rbind(get_pdata(lm_emotion_sadness, c(4, 7), "Sadness"),
+                           get_pdata(lm_emotion_disgust, c(4, 7), "Disgust"),
+                           get_pdata(lm_emotion_anxiety, c(4, 7), "Anxiety"),
+                           get_pdata(lm_emotion_anger, c(4, 7), "Anger")
+                           )
+
+pdata_h1 <- rbind(cbind(pdata_h1_belief_policy, type = "Effect on belief and policy opinion"),
+                  cbind(pdata_h1_emotions, type = "Effect on emotions"))
+
+pdata_h1 <- pdata_h1 %>% 
+  mutate(emotion = ifelse(str_detect(group, "low-misinfo"), 
+                          "Low emotional misinformation", "High emotional misinformation"))
+
+# actual plotting
+ggplot(pdata_h1, aes(x = outcome, y = estimate, color = "1")) +
+  geom_point(size = 1.5, position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin = lower, ymax = upper, linetype = emotion),
+                size = 0.5,
+                width = 0.25,
+                position = position_dodge(width = 0.5)) +
+  geom_hline(yintercept = 0, linetype = 3) +
+  ylim(c(-0.2, 0.2)) +
+  labs(x = "",
+       y = "") +
+  facet_wrap(fct_rev(emotion) ~ fct_rev(type), scales = "free") +
+  coord_flip() +
+  #scale_colour_manual(values = c("grey25", "grey50", "grey75")) +
+  scale_color_viridis_d(begin = 0, end = 0.5, direction = 1) +
+  scale_linetype_manual(values=c("solid", "twodash")) +
+  scale_shape_manual(values = c(17, 16)) +
+  theme_nice() +   
+  theme(legend.title = element_blank(),
+        legend.position = "bottom",
+        legend.key.size = unit(1, 'cm'),
+        strip.text.x = element_text(size = 8)
+  ) +
+  guides(color = "none",
+         linetype = guide_legend(reverse = TRUE),
+         shape = guide_legend(reverse = TRUE))
+
+#sjPlot::save_plot("./figures/p_h1.png", width = 24, height = 16)
+
+```
+
+
+
+```{r, echo = FALSE}
+
+
+
+
+# neutral correction for both low and high misinformation
+
+pdata_neutral_correction_belief_opinion <- rbind(get_pdata(lm_moral_conviction, c(4, 5, 7, 8), "Moral conviction"),
+                                           get_pdata(lm_policy_opinion, c(4, 5, 7, 8), "Policy restrictions"),
+                                           get_pdata(lm_knowledge_safe, c(4, 5, 7, 8), "Belief GMO safety"))
+
+pdata_neutral_correction_emotions <- rbind(
+  get_pdata(lm_emotion_sadness, c(4, 5, 7, 8), "Sadness"),
+  get_pdata(lm_emotion_disgust, c(4, 5, 7, 8), "Disgust"),
+  get_pdata(lm_emotion_anxiety, c(4, 5, 7, 8), "Anxiety"),
+  get_pdata(lm_emotion_anger, c(4, 5, 7, 8), "Anger")
+  )
+
+pdata_neutral_correction <- rbind(cbind(pdata_neutral_correction_belief_opinion, type = "Effect on belief and policy opinion"),
+                            cbind(pdata_neutral_correction_emotions, type = "Effect on emotions"))
+
+pdata_neutral_correction <- pdata_neutral_correction %>% 
+  mutate(emotion = ifelse(str_detect(group, "low-misinfo"), "Low emotional misinformation", "High emotional misinformation"),
+         correction = ifelse(str_detect(group, "correction"), "Neutral correction", "No correction"))
+
+
+# actual plotting
+ggplot(pdata_neutral_correction, aes(x = outcome, y = estimate, color = correction, shape = correction)) +
+  geom_point(size = 1.5, position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin = lower, ymax = upper, linetype = emotion),
+                size = 0.5,
+                width = 0.5,
+                position = position_dodge(width = 0.5)) +
+  geom_hline(yintercept = 0, linetype = 3) +
+  ylim(c(-0.2, 0.2)) +
+  labs(x = "",
+       y = "") +
+  facet_wrap(fct_rev(emotion) ~ fct_rev(type), scales = "free") +
+  coord_flip() +
+  #scale_colour_manual(values = c("grey25", "grey50", "grey75")) +
+  scale_color_viridis_d(begin = 0, end = 0.5, direction = -1) +
+  scale_linetype_manual(values=c("solid", "twodash")) +
+  scale_shape_manual(values = c(17, 16)) +
+  theme_nice() +   
+  theme(legend.title = element_blank(),
+        legend.position = "bottom",
+        legend.key.size = unit(1, 'cm'),
+        strip.text.x = element_text(size = 8)
+    ) +
+  guides(color = guide_legend(reverse = TRUE),
+         linetype = guide_legend(reverse = TRUE),
+         shape = guide_legend(reverse = TRUE))
+
+#sjPlot::save_plot("./figures/p_neutral_correction.png", width = 24, height = 16)
+
+
+
+# counter-frame correction for both low and high misinformation
+pdata_counter_frame_belief_opinion <- rbind(
+  get_pdata(lm_moral_conviction, c(4, 6, 7, 9), "Moral conviction"),
+  get_pdata(lm_policy_opinion, c(4, 6, 7, 9), "Policy restrictions"),
+  get_pdata(lm_knowledge_safe, c(4, 6, 7, 9), "Belief GMO safety")
+  )
+
+pdata_counter_frame_emotions <- rbind(
+  get_pdata(lm_emotion_sadness, c(4, 6, 7, 9), "Sadness"),
+  get_pdata(lm_emotion_disgust, c(4, 6, 7, 9), "Disgust"),
+  get_pdata(lm_emotion_anxiety, c(4, 6, 7, 9), "Anxiety"),
+  get_pdata(lm_emotion_anger, c(4, 6, 7, 9), "Anger")
+  )
+
+pdata_counter_frame <- rbind(cbind(pdata_counter_frame_belief_opinion, type = "Effect on belief and policy opinion"),
+                                  cbind(pdata_counter_frame_emotions, type = "Effect on Emotions"))
+
+pdata_counter_frame <- pdata_counter_frame %>% 
+  mutate(emotion = ifelse(str_detect(group, "low-misinfo"), "Low emotional misinformation", "High emotional misinformation"),
+         correction = ifelse(str_detect(group, "counter"), "Counter-frame correction", "No correction"))
+
+
+# actual plot
+ggplot(pdata_counter_frame, aes(x = outcome, y = estimate, color = correction, shape = correction)) +
+  geom_point(size = 1.5, position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin = lower, ymax = upper, linetype = emotion),
+                size = 0.5,
+                width = 0.5,
+                position = position_dodge(width = 0.5)) +
+  geom_hline(yintercept = 0, linetype = 3) +
+  ylim(c(-0.2, 0.2)) +
+  labs(x = "",
+       y = "") +
+  facet_wrap(fct_rev(emotion) ~ fct_rev(type), scales = "free") +
+  coord_flip() +
+  #scale_colour_manual(values = c("grey25", "grey50", "grey75")) +
+  scale_color_viridis_d(begin = 0, end = 0.75, direction = -1) +
+  scale_linetype_manual(values=c("solid", "twodash")) +
+  scale_shape_manual(values = c(15, 16)) +
+  theme_nice() +   
+  theme(legend.title = element_blank(),
+        legend.position = "bottom",
+        legend.key.size = unit(1, 'cm'),
+        strip.text.x = element_text(size = 8)
+  ) +
+  guides(color = guide_legend(reverse = TRUE),
+         linetype = guide_legend(reverse = TRUE),
+         shape = guide_legend(reverse = TRUE))
+
+#sjPlot::save_plot("./figures/p_counter_frame.png", width = 24, height = 16)
+
+
+# Appendix
+# info only
+
+pdata_info_effect <- rbind(
+  get_pdata(lm_moral_conviction, c(2, 3), "Moral conviction"),
+  get_pdata(lm_policy_opinion, c(2, 3), "Policy restrictions"),
+  get_pdata(lm_knowledge_safe, c(2, 3), "Belief GMO safety"))
+
+pdata_info_effect_emotions <- rbind(
+  get_pdata(lm_emotion_sadness, c(2, 3), "Sadness"),
+  get_pdata(lm_emotion_disgust, c(2, 3), "Disgust"),
+  get_pdata(lm_emotion_anxiety, c(2, 3), "Anxiety"),
+  get_pdata(lm_emotion_anger, c(2, 3), "Anger")
+  )
+
+pdata_info_effect <- rbind(cbind(pdata_info_effect, type = "Effect on belief and policy opinion"),
+                           cbind(pdata_info_effect_emotions, type = "Effect on Emotions"))
+
+pdata_info_effect <- pdata_info_effect %>% 
+  mutate(group = fct_recode(group, 
+                            "Neutral correction" = "neutral-correction",
+                            "Counterframe" = "counter-frame"))
+
+ggplot(pdata_info_effect, aes(x = outcome, y = estimate, color = fct_rev(group), shape = fct_rev(group))) +
+  geom_point(size = 1.5, position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin = lower, ymax = upper),
+                size = 0.5,
+                width = 0.5,
+                position = position_dodge(width = 0.5)) +
+  geom_hline(yintercept = 0, linetype = 3) +
+  ylim(c(-0.2, 0.2)) +
+  labs(x = "",
+       y = "") +
+  facet_wrap(~fct_rev(type), scales = "free_y") +
+  coord_flip() +
+  #scale_colour_manual(values = c("grey25", "grey50", "grey75")) +
+  scale_color_viridis_d(begin = 0.25, end = 0.75, direction = -1) +
+  scale_linetype_manual(values=c("dashed", "solid")) +
+  scale_shape_manual(values = c(15, 17)) +
+  theme_nice() +   
+  theme(legend.title = element_blank(),
+        legend.position = "bottom",
+        legend.key.size = unit(1, 'cm')) +
+  guides(color = guide_legend(reverse = TRUE),
+         linetype = guide_legend(reverse = TRUE),
+         shape = guide_legend(reverse = TRUE))
+
+#sjPlot::save_plot("./figures/p_info_effect.png", width = 24, height = 9)
+
+```
+
+# Conclusion
+
+
+
+
+
+
+
+
+\newpage
+
+# References
+
+\linespread{1}
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\noindent
+
+
+::: {#refs}
+
+:::
+

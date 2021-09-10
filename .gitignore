@@ -42,5 +42,11 @@ vignettes/*.pdf
 paper_files
 *.tex
 
+# references to be downloaded from citavi project or google drive
+*.bib
+
 # citation style file
 *.csl
+
+# no need to save the pdf
+paper.pdf

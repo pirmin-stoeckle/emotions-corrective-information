@@ -10,6 +10,7 @@ rm(list = ls())
 
 # internal release
 load("//sfb884-share.ad.uni-mannheim.de/data$/2_Data/data_for_R_users/GIP_W53_V1.Rdata")
+# later, the data will be made public
 
 data <- GIP_W53_V1
 names(data)

@@ -50,3 +50,6 @@ paper_files
 
 # no need to save the pdf
 paper.pdf
+
+# template
+template.Rmd

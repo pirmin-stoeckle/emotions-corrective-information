@@ -4,7 +4,7 @@ author: |
   | Pirmin Stöckle^[Corresponding address: pirmin.stoeckle@gess.uni-mannheim.de]
   | GESS and SFB 884, University of Mannheim
 date: \today
-linestretch: 1.2
+linestretch: 1.5
 colorlinks: true
 abstract: \setstretch{1} \noindent Concerns about various forms of misinformation and its fast dissemination through online media have generated huge interest into ways to effectively correct false claims. An under-explored mechanism in this research is the role of distinct emotions. How do emotional appeals interact with corrective information? Specifically, I focus on the emotion of disgust, which has been shown to be linked to the moralization of attitudes, which in turn reduces the impact of empirical evidence on attitudes and makes compromise less likely. Substantively, I investigate the issue of genetically modified (GM) food. I implement a pre-registered survey experiment within a panel study based on a probability sample of the general population in Germany (N = 4,000). Results show what we have learned about the question. This study provides evidence on the effect of emotionally charged disinformation on perceptions of GM food, and ways to effectively correct false claims. In a broader perspective, these results inform further studies and policy interventions on other issues where disinformation loads on strong emotions, ranging from social policy over immigration to health interventions such as vaccinations. \vspace{.8cm}
 
@@ -35,6 +35,7 @@ library(jtools)
 library(tidyverse)
 library(sjmisc)
 library(scales)
+library(knitr)
 ```
 
 
@@ -47,7 +48,7 @@ Fueled by the fast dissemination through digital media, the issue of various for
 To limit the danger from inaccurate or misleading information, efforts of fact-checking or corrective information more generally are widely applied [@walter2020fact]. A common finding in the maturing literature on corrective information is that these interventions are usually successful in reducing misperceptions, but may not translate to other outcomes such as attitudes, candidate evaluations or blame attribution [@bisgaard2019getting; @nyhan2019taking; @swire2019they; @thorson2016belief].
 
 <!-- % still, we know little about the role of discrete emotions in interacting with misinformation and corrective information -->
-While this has been linked to affect [@thorson2016belief], the connection of distinct emotions to both susceptibility to misinformation, and the effectiveness of corrective information is under-explored (exceptions include [@ecker2011terrorists; @martel2020reliance; @rosenzweig2020misinformation; @weeks2015emotions]. This is unfortunate given the important role that emotional appeals play in the dissemination of false or misleading information. We know that false news spread faster than true news, possibly because they are more likely to evoke emotions of surprise and disgust [@vosoughi2018spread]. In general, moral-emotional language is rewarded on social media [@brady2017emotion] and populist parties use more negative emotional appeals in their communication than non-populist parties [@widmann2021how].
+While this has been linked to affect [@thorson2016belief], the connection of distinct emotions to both susceptibility to misinformation, and the effectiveness of corrective information is under-explored (exceptions include [@ecker2011terrorists; @martel2020reliance; @rosenzweig2021happiness; @weeks2015emotions]. This is unfortunate given the important role that emotional appeals play in the dissemination of false or misleading information. We know that false news spread faster than true news, possibly because they are more likely to evoke emotions of surprise and disgust [@vosoughi2018spread]. In general, moral-emotional language is rewarded on social media [@brady2017emotion] and populist parties use more negative emotional appeals in their communication than non-populist parties [@widmann2021how].
 
 <!-- % emotion in political science -->
 Emotions certainly play an important role in politics [@redlawsk2006feeling], and approaches such as cognitive appraisal theory [@moors2013appraisal] or affective intelligence theory [@marcus2000affective; @marcus2019applying] provide frameworks for empirical expectaitoins about specific emotions. 
@@ -73,7 +74,7 @@ In a broader perspective, these results inform further studies and policy interv
 
 # Theory
 
-## Misinformation and corrective information
+## Misinformation and corrective information {-}
 
 <!-- % some definitions from Kuklinski and Flynn to Jerit -->
 
@@ -86,7 +87,7 @@ Some studies find effects, some not.
 
 Affective responses are at least implicitly discussed in this literature, but discrete emotions are widely neglected.
 
-## Emotions and political learning
+## Emotions, political learning, moralization {-}
 
 <!-- % From Vasiloupolou / Wagner -->
 <!-- %Early research into emotional reactions either used one simple positive–negative dimension or a two-dimensional valence model (Marcus, 2003; Marcus et al., 2000). More recently, researchers have argued that distinct emotions may characterise individuals’ reactions (e.g. Huddy et al., 2007; Larsen and McGraw, 2011; Petersen, 2010; Smith et al., 2008; Valentino et al., 2008, 2011; Weber, 2012; see also Conover and Feldman, 1986). Appraisal theories of emotions suggest that various distinct emotions arise due to individuals’ cognitive interpretation of the situation they experience (e.g. Roseman, 1991; Smith and Ellsworth, 1985; for a review, see Brader and Marcus, 2013). Neuroscientific theories based on the neural processes that generate emotional responses have also increasingly turned towards a three-dimensional model of emotions that distinguishes between fear, anger and enthusiasm (Brader and Marcus, 2013; Lerner and Keltner, 2001). Research in political psychology building on both appraisal and neural process theories has therefore focused in particular on the causes and consequences of anger, fear1 and enthusiasm as distinct emotions (Carver and Harmon-Jones, 2009; Conover and Feldman, 1986; Huddy et al., 2005, 2007; Lerner and Keltner, 2000, 2001; Petersen, 2010; Smith and Ellsworth, 1985; Valentino et al., 2011). -->
@@ -107,7 +108,7 @@ GM food is an issue on which disinformation exists. This does not mean that ther
 
 
 
-## Hypotheses
+## Empirical expectations {-}
 
 From findings on moral conviction and how emotional frames induce it [@clifford2019emotional; @wisneski2017moralization], I expect that a persuasive message evoking negative emotions, notably disgust and anger, can increase perceptions of the respective issue as being one of moral conviction. In order to count as a persuasive message, I expect the message to affect both factual beliefs and policy opinions in its direction.
 
@@ -145,22 +146,38 @@ Corrective information such as fact-checking is usually deliberately presented i
 
 <!-- %Visual cues relate to \citep{hameleers2020picture} and \citep{powell2021selection} -->
 
-## GMO - a case for emotional reactions and misinformation
+## GMO - a case for emotional reactions and misinformation {-}
 
 
 # Data & Methods
 
-# Results
+To investigate the direct effects of misinfomation and corrective information conditional on 
 
-## Descriptives
+The study will be conducted as a survey experiment embedded within wave 53 of the German Internet Panel (GIP) [@blom2015setting]. The GIP is a longitudinal panel survey based on a probability sample of the general population in Germany. 
+%The survey is conducted online, but recruitment was conducted offline according to a strict random probability sample. Households that did not posses the technical devices to participate online have been equipped with such devices. Survey waves are conducted on a bi-monthly basis, the fieldwork for this study will take place in May 2021.
+Because data collection is done by a third party, I do not have control over the sample size. From results of previous waves I expect a sample size of approximately 4,400 respondents.
+Fieldwork will be conducted in May 2021. Preliminary data for my own analyses will be available in July 2021 and a scientific use file will be made publicly available at GESIS data archive in December 2021.
+Pre-registered at OSF: https://osf.io/y63xu
+
+## Treatment Material
+
+## Outcome measures
+
+
+
+# Results
 
 ```{r, warning=FALSE, echo=FALSE}
 # load data
 source("data-preparation.R")
 ```
 
+## Descriptive statistics {-}
 
-```{r, warning=FALSE, echo=FALSE}
+Table \@ref(tab:descriptives) shows
+
+
+```{r descriptives, warning=FALSE, echo=FALSE, fig.pos="H"}
 # only control group
 
 descriptives_control <- data %>% 
@@ -173,11 +190,14 @@ descriptives_control <- data %>%
          "Policy restrictions" = "policy_opinion",
          "Moral conviction" = "moral_conviction")
 
-datasummary_skim(descriptives_control)
+knitr::kable(datasummary_skim(descriptives_control, histogram = FALSE, output = "data.frame"), 
+             caption = "Descriptive statistics")
 
 ```
 
-## Moralization
+## Moralization through misinformation {-}
+
+To quantify the effects of the different treatment conditions on the outcomes of interest, I run separate linear regressions with the respective outcome as the dependent variable and the treatment group indicator as the independent variable.
 
 
 ```{r, echo = FALSE}
@@ -210,7 +230,7 @@ get_pdata <- function(model, positions = c(), label = NA) {
 ```
 
 
-```{r, echo = FALSE}
+```{r fig-1, fig.align="center", fig.cap="Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
 # H1: misinformation effect
 pdata_h1_belief_policy <- rbind(get_pdata(lm_moral_conviction, c(4, 7), "Moral conviction"),
                                 get_pdata(lm_policy_opinion, c(4, 7), "Policy restrictions"),
@@ -260,9 +280,9 @@ ggplot(pdata_h1, aes(x = outcome, y = estimate, color = "1")) +
 
 ```
 
+## Effectiveness of neutral correction {-}
 
-
-```{r, echo = FALSE}
+```{r fig-2, fig.align="center", fig.cap="Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
 
 
 
@@ -316,6 +336,11 @@ ggplot(pdata_neutral_correction, aes(x = outcome, y = estimate, color = correcti
          shape = guide_legend(reverse = TRUE))
 
 #sjPlot::save_plot("./figures/p_neutral_correction.png", width = 24, height = 16)
+```
+
+## Counter-frame {-}
+
+```{r fig-3, fig.align="center", fig.cap="Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
 
 
 
@@ -370,6 +395,52 @@ ggplot(pdata_counter_frame, aes(x = outcome, y = estimate, color = correction, s
 
 #sjPlot::save_plot("./figures/p_counter_frame.png", width = 24, height = 16)
 
+```
+
+
+
+# Conclusion
+
+Summary: 
+
+* Persuasive, emotionally framed misinformation can increase moralization of opinions about GM food.
+* Effects persist with neutral corrective information, but counter-framing works.
+* Overall small effects: Explained variance ($R^2$) of $7 \%$ for beliefs, $3.5 \%$ for opinions, $1 \%$ for moral conviction.
+
+Limitations:
+
+* is it really emotions or "just" the pictures?
+
+
+Implications:
+
+* When misinformation is emotionally charged, fact-checkers may have to think about counter-frames to eliminate the misinformation effect.
+* a lack of acceptance of novel food technologies against scientific evidence can be seen as as a threat for the development of a more resilient food system @siegrist2020consumer.  genetic engineering provides avenues with large potential benefits @roberts2018nobel, @planck2019scientists, which may be impeded by public resistance possibly originating from misleading claims easily disseminated through online media.
+* Similar effects possible on other issues where misinformation loads on strong emotions, e.g. health interventions such as vaccinations.
+
+
+
+
+\newpage
+
+# References
+
+\linespread{1}
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\noindent
+
+
+::: {#refs}
+
+:::
+
+\newpage
+
+# Appendix {-}
+
+```{r fig-4, fig.align="center", fig.cap="Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
 
 # Appendix
 # info only
@@ -398,13 +469,13 @@ ggplot(pdata_info_effect, aes(x = outcome, y = estimate, color = fct_rev(group),
   geom_point(size = 1.5, position = position_dodge(width = 0.5)) +
   geom_errorbar(aes(ymin = lower, ymax = upper),
                 size = 0.5,
-                width = 0.5,
+                width = 0.25,
                 position = position_dodge(width = 0.5)) +
   geom_hline(yintercept = 0, linetype = 3) +
   ylim(c(-0.2, 0.2)) +
   labs(x = "",
        y = "") +
-  facet_wrap(~fct_rev(type), scales = "free_y") +
+  facet_wrap(group~fct_rev(type), scales = "free_y") +
   coord_flip() +
   #scale_colour_manual(values = c("grey25", "grey50", "grey75")) +
   scale_color_viridis_d(begin = 0.25, end = 0.75, direction = -1) +
@@ -413,7 +484,9 @@ ggplot(pdata_info_effect, aes(x = outcome, y = estimate, color = fct_rev(group),
   theme_nice() +   
   theme(legend.title = element_blank(),
         legend.position = "bottom",
-        legend.key.size = unit(1, 'cm')) +
+        legend.key.size = unit(1, 'cm'),
+        strip.text.x = element_text(size = 8)
+  ) +
   guides(color = guide_legend(reverse = TRUE),
          linetype = guide_legend(reverse = TRUE),
          shape = guide_legend(reverse = TRUE))
@@ -421,28 +494,3 @@ ggplot(pdata_info_effect, aes(x = outcome, y = estimate, color = fct_rev(group),
 #sjPlot::save_plot("./figures/p_info_effect.png", width = 24, height = 9)
 
 ```
-
-# Conclusion
-
-
-
-
-
-
-
-
-\newpage
-
-# References
-
-\linespread{1}
-\setlength{\parindent}{-0.2in}
-\setlength{\leftskip}{0.2in}
-\setlength{\parskip}{8pt}
-\noindent
-
-
-::: {#refs}
-
-:::
-

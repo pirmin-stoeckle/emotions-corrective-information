@@ -174,7 +174,7 @@ Assignment is done by simple random assignment into equal sized groups. Table gi
 
 As the factual belief of interest, I measure factual beliefs about the safety of GM foods by asking respondents whether they think that the statement that eating GM foods is safe for one's health is false or correct on a 7-point scale from "certainly false" to "certainly correct".
 
- To provide a broad measure of policy support, I use a measure by @[diamond2020does] that asks respondents how high a policy priority it should be to restrict the use of GM food on a 7-point scale from "no priority" to "highest priority".
+To provide a broad measure of policy support, I use a measure by @[diamond2020does] that asks respondents how high a policy priority it should be to restrict the use of GM food on a 7-point scale from "no priority" to "highest priority".
 
 I measure moral conviction with two standard items from the literature, asking respondents whether their evaluation of GM food is connected to moral convictions and about fundamental right and wrong, respectively, on a 5-point scale from "not at all" to "very much" @[skitka2020psychology]. This is a direct measure of a "meta-cognition", building on the assumption that respondents know which issues are about moral conviction for them. Both items will be combined into a simple additive index.
 

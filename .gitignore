@@ -57,3 +57,6 @@ template_pagedown.Rmd
 
 # figures including treatment material and presentation visuals
 figures/
+
+# data
+*.RData

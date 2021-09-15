@@ -1,6 +1,11 @@
 ---
-title: "Emotional framing and the effectiveness of corrective information^[I thank Thomas Bräuninger, Sebastian Juhl, the GIP team, and participants of the CDSS workshop in political science at the University of Mannheim for excellent comments and helpful suggestions on this study. This work was supported by the German Research Foundation (DFG) via the Collaborative Research Center (SFB) 884 on ``The Political Economy of Reforms'' (Project C2) and the University of Mannheim’s Graduate School of Economics and Social Sciences.]"
+title: |
+  | Emotional framing and the effectiveness of 
+  | corrective information^[I thank Thomas Bräuninger, Sebastian Juhl, the GIP team, and participants of the Fall 2020 CDSS workshop in political science at the University of Mannheim for excellent comments and helpful suggestions on this study. This work was supported by the German Research Foundation (DFG) via the Collaborative Research Center (SFB) 884 on ``The Political Economy of Reforms'' (Project C2) and the University of Mannheim’s Graduate School of Economics and Social Sciences.]
+  | *Working Paper*
 author: |
+  | *Working paper*
+  |
   | Pirmin Stöckle^[Corresponding address: pirmin.stoeckle@gess.uni-mannheim.de]
   | GESS and SFB 884, University of Mannheim
 date: \today
@@ -24,6 +29,8 @@ geometry: margin=1in
 always_allow_html: yes
 
 ---
+
+<!-- This paper is written in RMarkdown based on a template available here: https://osf.io/q395s -->
 
 ```{r, include=FALSE}
 # packages
@@ -154,13 +161,14 @@ The topic of GM feed is particularly suited for this study because it is an issu
 
 # Data & Methods
 
-To investigate the direct effects of misinformation and corrective information conditional on 
+To investigate the direct effects of misinformation and corrective information conditional on emotional framing, I conducted a pre-registered survey experiment.^[Pre-registration can be found on OSF: https://osf.io/y63xu] The experiment was implemented within wave 53 of the German Internet Panel (GIP) [@blom2015setting]. The GIP is a longitudinal panel survey based on a probability sample of the general population in Germany. The survey is conducted online, but recruitment was conducted offline according to a strict random probability sample. Households that did not posses the technical devices to participate online have been equipped with such devices. Fieldwork for this study took place in May 2021 and the sample size reached 4,260 respondents.
 
-The study will be conducted as a survey experiment embedded within wave 53 of the German Internet Panel (GIP) [@blom2015setting]. The GIP is a longitudinal panel survey based on a probability sample of the general population in Germany. 
-%The survey is conducted online, but recruitment was conducted offline according to a strict random probability sample. Households that did not posses the technical devices to participate online have been equipped with such devices. Survey waves are conducted on a bi-monthly basis, the fieldwork for this study will take place in May 2021.
-Because data collection is done by a third party, I do not have control over the sample size. From results of previous waves I expect a sample size of approximately 4,400 respondents.
-Fieldwork will be conducted in May 2021. Preliminary data for my own analyses will be available in July 2021 and a scientific use file will be made publicly available at GESIS data archive in December 2021.
-Pre-registered at OSF: https://osf.io/y63xu
+The between-subjects survey experiment followed a 3 $\times$ 3 full factorial design varying both misinformation (none, low emotional framing, high emotional framing) and corrective information (none, neutral correction, counterframe correction). Respondents were randomly assigned to one of the 9 resulting groups, thus yielding 8 treatment conditions and one control condition were no information treatment was shown.
+
+An extensive debriefing is included at the end of the study for all respondents. Specifically, all original sources of information are revealed.
+Because all shown information has in a similar format been in the media, there is no deception taking place.
+The experimental treatment intends to evoke emotions, but I consider them within reason. There are two main reasons for that. First, the material including the used imagery has been used in a previously published study @[clifford2019emotional]. Second, the central part of the visual material has been used by actual reporting on the issue in mainstream media^[www.welt.de/newsticker/news1/article109594074/Bundesinstitut-Genmais-Schaeden-nicht-ausreichend-belegt].
+The study was approved by the team operating the GIP, with the goal of designing the study in a way that it is an appropriately pleasant experience for respondents. Because this approval has been granted, this study did not require further approval by an ethics committee.
 
 ## Treatment Material {-}
 
@@ -180,16 +188,10 @@ I measure moral conviction with two standard items from the literature, asking r
 
 I measure distinct emotions by directly asking respondents how well a given feeling represents how they feel toward GM food. Asking about their feelings toward GM food makes this a measure of integral, not incidental emotion, in line with expectation about to which kind of emotion moralization responds @[skitka2018attitude]. The distinct negative emotions I measure are disgust, anger, anxiety, and sadness, each on a 5-point scale from "not at all" to "extremely".
 
-## Ethics {-}
-
-An extensive debriefing is included at the end of the study for all respondents. Specifically, all original sources of information are revealed.
-Because all shown information has in a similar format been in the media, there is no deception taking place.
-The experimental treatment intends to evoke emotions, but I consider them within reason. There are two main reasons for that. First, the material including the used imagery has been used in a previously published study @[clifford2019emotional]. Second, the central part of the visual material has been used by actual reporting on the issue in mainstream media^[www.welt.de/newsticker/news1/article109594074/Bundesinstitut-Genmais-Schaeden-nicht-ausreichend-belegt].
-The study was approved by the team operating the GIP, with the goal of designing the study in a way that it is an appropriately pleasant experience for respondents. Because this approval has been granted, this study did not require further approval by an ethics committee.
 
 # Results
 
-This paper is written in RMarkdown based on a template available here: https://osf.io/q395s
+
 
 
 ```{r, warning=FALSE, echo=FALSE}

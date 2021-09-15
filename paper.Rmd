@@ -2,7 +2,6 @@
 title: |
   | Emotional framing and the effectiveness of 
   | corrective information^[I thank Thomas Bräuninger, Sebastian Juhl, the GIP team, and participants of the Fall 2020 CDSS workshop in political science at the University of Mannheim for excellent comments and helpful suggestions on this study. This work was supported by the German Research Foundation (DFG) via the Collaborative Research Center (SFB) 884 on ``The Political Economy of Reforms'' (Project C2) and the University of Mannheim’s Graduate School of Economics and Social Sciences.]
-  | *Working Paper*
 author: |
   | *Working paper*
   |
@@ -161,9 +160,9 @@ The topic of GM feed is particularly suited for this study because it is an issu
 
 # Data & Methods
 
-To investigate the direct effects of misinformation and corrective information conditional on emotional framing, I conducted a pre-registered survey experiment.^[Pre-registration can be found on OSF: https://osf.io/y63xu] The experiment was implemented within wave 53 of the German Internet Panel (GIP) [@blom2015setting]. The GIP is a longitudinal panel survey based on a probability sample of the general population in Germany. The survey is conducted online, but recruitment was conducted offline according to a strict random probability sample. Households that did not posses the technical devices to participate online have been equipped with such devices. Fieldwork for this study took place in May 2021 and the sample size reached 4,260 respondents.
+To investigate the direct effects of misinformation and corrective information conditional on emotional framing, I conducted a pre-registered survey experiment.^[Pre-registration can be found on OSF: https://osf.io/y63xu.] The experiment was implemented within wave 53 of the German Internet Panel (GIP) [@blom2015setting]. The GIP is a longitudinal panel survey based on a probability sample of the general population in Germany. The survey is conducted online, but recruitment was conducted offline according to a strict random probability sample. Households that did not posses the technical devices to participate online have been equipped with such devices. Fieldwork for this study took place in May 2021 and the sample size reached 4,260 respondents.
 
-The between-subjects survey experiment followed a 3 $\times$ 3 full factorial design varying both misinformation (none, low emotional framing, high emotional framing) and corrective information (none, neutral correction, counterframe correction). Respondents were randomly assigned to one of the 9 resulting groups, thus yielding 8 treatment conditions and one control condition were no information treatment was shown.
+The between-subjects survey experiment followed a 3 $\times$ 3 full factorial design varying both misinformation (none, low emotional framing, high emotional framing) and corrective information (none, neutral correction, counterframe correction). Respondents were randomly assigned to one of the nine resulting groups, thus yielding eight treatment conditions and one control condition were no information treatment was shown.
 
 An extensive debriefing is included at the end of the study for all respondents. Specifically, all original sources of information are revealed.
 Because all shown information has in a similar format been in the media, there is no deception taking place.
@@ -191,17 +190,16 @@ I measure distinct emotions by directly asking respondents how well a given feel
 
 # Results
 
-
-
-
-```{r, warning=FALSE, echo=FALSE}
+```{r, warning=FALSE, echo=FALSE, message = FALSE}
 # load data
 source("data-preparation.R")
 ```
 
 ## Descriptive statistics {-}
 
-Table \@ref(tab:descriptives)
+Table \@ref(tab:descriptives) shows descriptive statistics of the outcome variables in the control group, which does not get any informational treatment and thus serves as the reference to investigate information effects. On the scale from 0 to 4, anger as an emotional reaction to th issue of GM food was expressed with a mean of 1.7 moderately below the midpoint. Anxiety was above the midpoint with a mean of 2.4 whereas disgust was realtively low with a mean of 1.3, and sadness again moderatly below the midpoint with 1.7. These figures indicate that respondents' negative reactions to GM food stem from concerns rather than disgust.
+
+With regard to the factual belief that GM food is safe to eat, the sample is skewed toward the view that this is rather not true (mean = 3.2 on a scale from 1 to 7). When it comes to opinions about policy restrictions for GM food, respondents are rather in favor (mean = 5.2 on a scale from 1 to 7). Finally, the measure of moral conviction is close to the midpoint (mean = 4.4 on a scale from 0 to 8).
 
 
 ```{r descriptives, echo=FALSE, message=FALSE, warning=FALSE}
@@ -225,7 +223,12 @@ data %>%
 
 ## Moralization through misinformation {-}
 
-To quantify the effects of the different treatment conditions on the outcomes of interest, I run separate linear regressions with the respective outcome as the dependent variable and the treatment group indicator as the independent variable.
+I now turn to the effects of the informational treatments on the outcome variables. To quantify these effects, I run separate linear regressions with the respective outcome as the dependent variable and the treatment group indicator as the independent variable. For a more intuitive interpretation of the effect sizes - and to be able to compare outcome variables measured on different scales - I rescale all outcome variables to range from 0 to 1. I do not include any control variables because the random assignment of the experimental design provides the better safeguard against any possible confounders. 
+
+In the appendix, I report the regression tables, in the following I will visualize the estimated regression coefficients for the different treatment conditions.
+
+
+
 
 
 ```{r, echo = FALSE}
@@ -258,7 +261,9 @@ get_pdata <- function(model, positions = c(), label = NA) {
 ```
 
 
-```{r fig-1, fig.align="center", fig.cap="Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
+First, \@ref(fig:misinfo-only) reports the effects of reiceiving only the misinformation message. The upper half of the figure shows two plots with the effects of the low emotion misinformation and the lower half shows two plots with the effects of the high emtoion misinformation message. The y-axis indicates the different outomce variables, and the x-axis indicates the effect size relative to the control group, which serves as the reference category for all models. 
+
+```{r misinfo-only, fig.align="center", fig.cap="Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
 # H1: misinformation effect
 pdata_h1_belief_policy <- rbind(get_pdata(lm_moral_conviction, c(4, 7), "Moral conviction"),
                                 get_pdata(lm_policy_opinion, c(4, 7), "Policy restrictions"),
@@ -275,7 +280,7 @@ pdata_h1 <- rbind(cbind(pdata_h1_belief_policy, type = "Effect on belief and pol
 
 pdata_h1 <- pdata_h1 %>% 
   mutate(emotion = ifelse(str_detect(group, "low-misinfo"), 
-                          "Low emotional misinformation", "High emotional misinformation"))
+                          "Low emotion misinformation", "High emotion misinformation"))
 
 # actual plotting
 ggplot(pdata_h1, aes(x = outcome, y = estimate, color = "1")) +
@@ -297,7 +302,7 @@ ggplot(pdata_h1, aes(x = outcome, y = estimate, color = "1")) +
   theme_nice() +   
   theme(legend.title = element_blank(),
         legend.position = "bottom",
-        legend.key.size = unit(1, 'cm'),
+        legend.key.size = unit(0.1, 'cm'),
         strip.text.x = element_text(size = 8)
   ) +
   guides(color = "none",
@@ -332,7 +337,7 @@ pdata_neutral_correction <- rbind(cbind(pdata_neutral_correction_belief_opinion,
                             cbind(pdata_neutral_correction_emotions, type = "Effect on emotions"))
 
 pdata_neutral_correction <- pdata_neutral_correction %>% 
-  mutate(emotion = ifelse(str_detect(group, "low-misinfo"), "Low emotional misinformation", "High emotional misinformation"),
+  mutate(emotion = ifelse(str_detect(group, "low-misinfo"), "Low emotion misinformation", "High emotion misinformation"),
          correction = ifelse(str_detect(group, "correction"), "Neutral correction", "No correction"))
 
 
@@ -390,8 +395,8 @@ pdata_counter_frame <- rbind(cbind(pdata_counter_frame_belief_opinion, type = "E
                                   cbind(pdata_counter_frame_emotions, type = "Effect on Emotions"))
 
 pdata_counter_frame <- pdata_counter_frame %>% 
-  mutate(emotion = ifelse(str_detect(group, "low-misinfo"), "Low emotional misinformation", "High emotional misinformation"),
-         correction = ifelse(str_detect(group, "counter"), "Counter-frame correction", "No correction"))
+  mutate(emotion = ifelse(str_detect(group, "low-misinfo"), "Low emotion misinformation", "High emotion misinformation"),
+         correction = ifelse(str_detect(group, "counter"), "Counterframe correction", "No correction"))
 
 
 # actual plot

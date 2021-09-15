@@ -60,6 +60,7 @@ While this has been linked to affect [@thorson2016belief], the connection of dis
 <!-- % emotion in political science -->
 In this study, I follow recent work in political science inspired by moral psychology. Most relevant for this study, @clifford2019emotional finds that a persuasive emotional frame loading on emotions of anger and disgust increases the perception of an issue as being one of moral conviction [@skitka2020psychology; @wisneski2017moralization]. 
 Moral conviction, i.e. the conviction that the handling of an issue touches morality and is about fundamental right or wrong, can be seen as a dimension of attitude strength [@skitka2018attitude]. 
+While it is often seen as a binary categorization whether or not an issue is a moral one, there is quite some variation in the extent of moralization within issues [@ryan2014reconsidering] with distinct behavioral consequences, such as an absolute unwillingness to compromise [@ryan2017no] or a tendency to view that issue in absolutist term and to be less likely to be open for information about consequences [@ryan2019actions]. 
 
 <!-- % get more concrete linking belief echoes / affective perseverance and specific emotion with possible connection to moralization -->
 In his study, Clifford shows that disgust-evoking messages can increase moral conviction with its consequences on polarizing attitudes. However, some of the treatment material used in his study comes from a later retracted study linking GMO and cancer. Such a piece of information can be classified as misinformation in the sense of going against ``best available evidence in the public sphere''[@flynn2017nature, p.128].
@@ -69,49 +70,65 @@ From findings of belief echoes [@thorson2016belief] and affective perseverance [
 This study contributes to the literature of corrective information by linking the concept of belief echoes to the perseverance of specific emotions with related consequences on attitudes. Specifically, it provides evidence on the effect of emotionally charged disinformation on perceptions of GM food, and ways to effectively correct false claims.
 
 <!-- % Final Punchline on broader relevance -->
-In the view of many scientists [@roberts2018nobel, planck2019scientists], genetic engineering provides avenues with large potential benefits, which may be impeded by public resistance possibly originating from misleading claims easily disseminated through online media.
+In the view of many scientists [@roberts2018nobel, @planck2019scientists], genetic engineering provides avenues with large potential benefits, which may be impeded by public resistance possibly originating from misleading claims easily disseminated through online media.
 In a broader perspective, these results inform further studies and policy interventions on other issues where disinformation loads on strong emotions, ranging from social policy over immigration to health interventions such as vaccinations.
 
 
-
+\newpage
 # Theory
 
 ## Misinformation and corrective information {-}
+
+*t.b.d.*
+
+
+* Definition and distinction between misinformation and disinformation.
+* Some worries about backfire effects, but usually, corrective information works, and guidelines for best practice corrections have been collected.
+* Emotions may contribute to the spread of false information.
+* Relatively little evidence on the role of emotions for misinformation and corrective information.
 
 <!-- % some definitions from Kuklinski and Flynn to Jerit -->
 
 <!-- % information corrects factual beliefs, but the effects of information on attitudes are mixed -->
 
-Factual beliefs are affected in the direction of presented evidence for both (a) misinformation and (b) corrective information.
+<!-- Factual beliefs are affected in the direction of presented evidence for both (a) misinformation and (b) corrective information. -->
 
-The effects on related opinions are much less clear.
-Some studies find effects, some not.
+<!-- The effects on related opinions are much less clear. -->
+<!-- Some studies find effects, some not. -->
 
-Affective responses are at least implicitly discussed in this literature, but discrete emotions are widely neglected.
+<!-- Affective responses are at least implicitly discussed in this literature, but discrete emotions are widely neglected. -->
 
-## Emotions, political learning, moralization {-}
+## Emotional framing and moralization {-}
+
+*t.b.d.*
+
+* Emotions feature prominently in political communication.
+* Framing.
+* Some known effects on information processing.
+* Findings from moral psychology on moralization through disgust.
+* Importance of moral conviction for compromise, openness to scientific findings on consequences versus absolutist opposition.
 
 <!-- % From Vasiloupolou / Wagner -->
 <!-- %Early research into emotional reactions either used one simple positive–negative dimension or a two-dimensional valence model (Marcus, 2003; Marcus et al., 2000). More recently, researchers have argued that distinct emotions may characterise individuals’ reactions (e.g. Huddy et al., 2007; Larsen and McGraw, 2011; Petersen, 2010; Smith et al., 2008; Valentino et al., 2008, 2011; Weber, 2012; see also Conover and Feldman, 1986). Appraisal theories of emotions suggest that various distinct emotions arise due to individuals’ cognitive interpretation of the situation they experience (e.g. Roseman, 1991; Smith and Ellsworth, 1985; for a review, see Brader and Marcus, 2013). Neuroscientific theories based on the neural processes that generate emotional responses have also increasingly turned towards a three-dimensional model of emotions that distinguishes between fear, anger and enthusiasm (Brader and Marcus, 2013; Lerner and Keltner, 2001). Research in political psychology building on both appraisal and neural process theories has therefore focused in particular on the causes and consequences of anger, fear1 and enthusiasm as distinct emotions (Carver and Harmon-Jones, 2009; Conover and Feldman, 1986; Huddy et al., 2005, 2007; Lerner and Keltner, 2000, 2001; Petersen, 2010; Smith and Ellsworth, 1985; Valentino et al., 2011). -->
 <!-- % -->
 <!-- %Applied to political phenomena, distinct emotions cause different types of actions and attitudes: fear leads to caution and openness, and anger to more confident and aggressive responses (Druckman and McDermott, 2008; MacKuen et al., 2010). For instance, whereas fear and anger both tend to increase intolerance and threat perceptions (e.g. Erişen and Kentmen-Cin, 2017), they lead to distinct ways of reacting to terrorist threats (Lerner et al., 2003). Fearful citizens are more wary of the increased risk and turn to isolationism, while angry citizens are less risk-averse and tend to favour pro-active intervention (Huddy et al., 2007). Anxious citizens are also more likely to seek out new information and process this carefully (Brader et al., 2008; Marcus et al., 2000; Merolla and Zechmeister, 2009; Valentino et al., 2008). Finally, enthusiasm increases the willingness to participate in politics, but like anger it also increases less careful forms of information-processing (Brader, 2006; Marcus et al., 2000). -->
 
-Emotions certainly play an important role in politics [@redlawsk2006feeling], and approaches such as cognitive appraisal theory [@moors2013appraisal] or affective intelligence theory [@marcus2000affective; @marcus2019applying] provide frameworks for empirical expectaitoins about specific emotions. 
+<!-- Emotions certainly play an important role in politics [@redlawsk2006feeling], and approaches such as cognitive appraisal theory [@moors2013appraisal] or affective intelligence theory [@marcus2000affective; @marcus2019applying] provide frameworks for empirical expectaitoins about specific emotions.  -->
 
 
-Although there is a rich literature on emotions in politics shedding light on its effect on information processing, political learning and participation, the connection of distinct emotions to both susceptibility to misinformation and the effectiveness of corrective information is under-explored.
+<!-- Although there is a rich literature on emotions in politics shedding light on its effect on information processing, political learning and participation, the connection of distinct emotions to both susceptibility to misinformation and the effectiveness of corrective information is under-explored. -->
 
-Research has shown that... anger... anxiety... enthusiasms...
+<!-- Research has shown that... anger... anxiety... enthusiasms... -->
 
-A recently growing interest is in disgust.
-Connection to morality, relevant for immigration, homeless ...
+<!-- A recently growing interest is in disgust. -->
+<!-- Connection to morality, relevant for immigration, homeless ... -->
 
-A study has shown that moral shock works to moralize attitudes towards GM food.
+<!-- A study has shown that moral shock works to moralize attitudes towards GM food. -->
 
-While it is often seen as a binary categorization whether or not an issue is a moral one, there is quite some variation in the extent of moralization within issues [@ryan2014reconsidering] with distinct behavioral consequences, such as an absolute unwillingness to compromise [@ryan2017no] or a tendency to view that issue in absolutist term and to be less likely to be open for information about consequences [@ryan2019actions]. 
 
-However, the main part of the material used there can be classified as misinformation
-GM food is an issue on which disinformation exists. This does not mean that there can or should be no criticism, but concrete adverse health effects are not warranted by evidence. Least knowledgeable people are the fiercest opponents. So
+
+<!-- However, the main part of the material used there can be classified as misinformation -->
+<!-- GM food is an issue on which disinformation exists. This does not mean that there can or should be no criticism, but concrete adverse health effects are not warranted by evidence. Least knowledgeable people are the fiercest opponents. So -->
 
 
 
@@ -153,10 +170,10 @@ Corrective information such as fact-checking is usually deliberately presented i
 
 <!-- %Visual cues relate to \citep{hameleers2020picture} and \citep{powell2021selection} -->
 
-## GMO - a case for emotional reactions and misinformation {-}
+## GM food - a case for emotional reactions and misinformation {-}
 
 <!-- % explain the relevance of GMO as an issue, also in realtion to moralization -->
-The topic of GM feed is particularly suited for this study because it is an issue where science and public opinion diverge considerably, implying a relevant role for corrective information [@diamond2020does, hasell2020differential, carnahan2019processing]. This is especially true within the German population, which is where this study draws its sample from [@gaskell2010europeans]. GM food is also a topic on which there are misperceptions, possibly due to disinformation. Of course, there is legitimate criticism on the use of genetic modification. However, studies show that extreme opponents of GM food know the least about it [@fernbach2019extreme], and a lack of acceptance of novel food technologies against scientific evidence can be seen as as a threat for the development of a more resilient food system [@siegrist2020consumer]. 
+The topic of GM food is particularly suited for this study because it is an issue where science and public opinion diverge considerably, implying a relevant role for corrective information [@diamond2020does, @hasell2020differential, @carnahan2019processing]. This is especially true within the German population, which is where this study draws its sample from [@gaskell2010europeans]. GM food is also a topic on which there are misperceptions, possibly due to disinformation. Of course, there is legitimate criticism on the use of genetic modification. However, studies show that extreme opponents of GM food know the least about it [@fernbach2019extreme], and a lack of acceptance of novel food technologies against scientific evidence can be seen as as a threat for the development of a more resilient food system [@siegrist2020consumer]. 
 
 # Data & Methods
 
@@ -166,26 +183,26 @@ The between-subjects survey experiment followed a 3 $\times$ 3 full factorial de
 
 An extensive debriefing is included at the end of the study for all respondents. Specifically, all original sources of information are revealed.
 Because all shown information has in a similar format been in the media, there is no deception taking place.
-The experimental treatment intends to evoke emotions, but I consider them within reason. There are two main reasons for that. First, the material including the used imagery has been used in a previously published study @[clifford2019emotional]. Second, the central part of the visual material has been used by actual reporting on the issue in mainstream media^[www.welt.de/newsticker/news1/article109594074/Bundesinstitut-Genmais-Schaeden-nicht-ausreichend-belegt].
+The experimental treatment intends to evoke emotions, but I consider them within reason. There are two main reasons for that. First, the material including the used imagery has been used in a previously published study [@clifford2019emotional]. Second, the central part of the visual material has been used by actual reporting on the issue in mainstream media^[www.welt.de/newsticker/news1/article109594074/Bundesinstitut-Genmais-Schaeden-nicht-ausreichend-belegt].
 The study was approved by the team operating the GIP, with the goal of designing the study in a way that it is an appropriately pleasant experience for respondents. Because this approval has been granted, this study did not require further approval by an ethics committee.
 
 ## Treatment Material {-}
 
 The experimental treatment consists of a combination of two types of information. One type of information reports the results of a study claiming that genetically modified corn lead to increased cancer rates in rats. The wording is partly taken from actual news coverage of the study in 2012, and partly from treatment material in @clifford2019emotional. The respective study has been retracted due to non-adherence to scientific procedures, and the current scientific evidence does not point to severe health problems associated with genetically modified animal feed. The information within the study can thus be classified as misinformation.^[This is consistent with a definition of resulting mis*perceptions* as "factual beliefs that are false or contradict the best available evidence in the public domain" [@flynn2017nature, p.128]. If one would presume the intent to mislead, this would then be classified as disinformation.] I vary this misinformation to be either low or high in emotional framing by ex- or including graphical images of a rat with a cancer tumor and rotten corn, images that are taken from @clifford2019emotional and shown to induce negative feelings, specifically disgust.
 
-The second type of information reports the accurate scientific consensus that GM food is generally safe to eat, that a study showing cancer growth in rats due to GM feed has been retracted, and that genetically modifying plants for the food industry is not a new phenomenon. This piece of information is a correction to the misinformation in that it reflects best available scientific evidence and it is constructed to conform to best practice standards of debunking information @[lewandowsky2020debunking]. As a neutral correction, this piece of information corrects the misinformation about concrete health risks from GM food in a text-only format. By negating the risks, it still stays within the overall framing of GM food as possibly risky, and does not add specific further information about benefits from GM food. This is done in a further condition, where the corrective information is embedded in a counter-frame, emphasizing positive aspects of GM food, such as its potential to contribute to more sustainable agriculture by reducing pesticides, and its potential to fight malnutrition.
+The second type of information reports the accurate scientific consensus that GM food is generally safe to eat, that a study showing cancer growth in rats due to GM feed has been retracted, and that genetically modifying plants for the food industry is not a new phenomenon. This piece of information is a correction to the misinformation in that it reflects best available scientific evidence and it is constructed to conform to best practice standards of debunking information [@lewandowsky2020debunking]. As a neutral correction, this piece of information corrects the misinformation about concrete health risks from GM food in a text-only format. By negating the risks, it still stays within the overall framing of GM food as possibly risky, and does not add specific further information about benefits from GM food. This is done in a further condition, where the corrective information is embedded in a counter-frame, emphasizing positive aspects of GM food, such as its potential to contribute to more sustainable agriculture by reducing pesticides, and its potential to fight malnutrition.
 
-Assignment is done by simple random assignment into equal sized groups. Table gives an overview over the nine resulting experimental groups. The misinformation (if any is assigned) is always shown first, immediately followed by the corrective information (if any is assigned). For respondents, the manipulation is thus designed in a way that both types of information ``hits them between the eyes'' @[kuklinski2000misinformation, p.805].
+Assignment is done by simple random assignment into equal sized groups. Table gives an overview over the nine resulting experimental groups. The misinformation (if any is assigned) is always shown first, immediately followed by the corrective information (if any is assigned). For respondents, the manipulation is thus designed in a way that both types of information ``hits them between the eyes'' [@kuklinski2000misinformation, p.805].
 
 ## Outcome measures {-}
 
 As the factual belief of interest, I measure factual beliefs about the safety of GM foods by asking respondents whether they think that the statement that eating GM foods is safe for one's health is false or correct on a 7-point scale from "certainly false" to "certainly correct".
 
-To provide a broad measure of policy support, I use a measure by @[diamond2020does] that asks respondents how high a policy priority it should be to restrict the use of GM food on a 7-point scale from "no priority" to "highest priority".
+To provide a broad measure of policy support, I use a measure by [@diamond2020does] that asks respondents how high a policy priority it should be to restrict the use of GM food on a 7-point scale from "no priority" to "highest priority".
 
-I measure moral conviction with two standard items from the literature, asking respondents whether their evaluation of GM food is connected to moral convictions and about fundamental right and wrong, respectively, on a 5-point scale from "not at all" to "very much" @[skitka2020psychology]. This is a direct measure of a "meta-cognition", building on the assumption that respondents know which issues are about moral conviction for them. Both items will be combined into a simple additive index.
+I measure moral conviction with two standard items from the literature, asking respondents whether their evaluation of GM food is connected to moral convictions and about fundamental right and wrong, respectively, on a 5-point scale from "not at all" to "very much" [@skitka2020psychology]. This is a direct measure of a "meta-cognition", building on the assumption that respondents know which issues are about moral conviction for them. Both items will be combined into a simple additive index.
 
-I measure distinct emotions by directly asking respondents how well a given feeling represents how they feel toward GM food. Asking about their feelings toward GM food makes this a measure of integral, not incidental emotion, in line with expectation about to which kind of emotion moralization responds @[skitka2018attitude]. The distinct negative emotions I measure are disgust, anger, anxiety, and sadness, each on a 5-point scale from "not at all" to "extremely".
+I measure distinct emotions by directly asking respondents how well a given feeling represents how they feel toward GM food. Asking about their feelings toward GM food makes this a measure of integral, not incidental emotion, in line with expectation about to which kind of emotion moralization responds [@skitka2018attitude]. The distinct negative emotions I measure are disgust, anger, anxiety, and sadness, each on a 5-point scale from "not at all" to "extremely".
 
 
 # Results
@@ -197,7 +214,7 @@ source("data-preparation.R")
 
 ## Descriptive statistics {-}
 
-Table \@ref(tab:descriptives) shows descriptive statistics of the outcome variables in the control group, which does not get any informational treatment and thus serves as the reference to investigate information effects. On the scale from 0 to 4, anger as an emotional reaction to th issue of GM food was expressed with a mean of 1.7 moderately below the midpoint. Anxiety was above the midpoint with a mean of 2.4 whereas disgust was realtively low with a mean of 1.3, and sadness again moderatly below the midpoint with 1.7. These figures indicate that respondents' negative reactions to GM food stem from concerns rather than disgust.
+Table \@ref(tab:descriptives) shows descriptive statistics of the outcome variables in the control group, which does not get any informational treatment and thus serves as the reference to investigate information effects. On the scale from 0 to 4, anger as an emotional reaction to th issue of GM food was expressed with a mean of 1.7 moderately below the midpoint. Anxiety was above the midpoint with a mean of 2.4 whereas disgust was relatively low with a mean of 1.3, and sadness again moderately below the midpoint with 1.7. These figures indicate that respondents' negative reactions to GM food stem from concerns rather than disgust.
 
 With regard to the factual belief that GM food is safe to eat, the sample is skewed toward the view that this is rather not true (mean = 3.2 on a scale from 1 to 7). When it comes to opinions about policy restrictions for GM food, respondents are rather in favor (mean = 5.2 on a scale from 1 to 7). Finally, the measure of moral conviction is close to the midpoint (mean = 4.4 on a scale from 0 to 8).
 
@@ -225,8 +242,7 @@ data %>%
 
 I now turn to the effects of the informational treatments on the outcome variables. To quantify these effects, I run separate linear regressions with the respective outcome as the dependent variable and the treatment group indicator as the independent variable. For a more intuitive interpretation of the effect sizes - and to be able to compare outcome variables measured on different scales - I rescale all outcome variables to range from 0 to 1. I do not include any control variables because the random assignment of the experimental design provides the better safeguard against any possible confounders. 
 
-In the appendix, I report the regression tables, in the following I will visualize the estimated regression coefficients for the different treatment conditions.
-
+In the appendix, I report the regression tables, in the following I will visualize the estimated regression coefficients for the different treatment conditions. Without any controls, the coefficients refer to the difference in the mean of the outcome between the control and the respective treatment group. ^[The significance of the coefficients is equivalent to running separate t-tests between the group means, which raises the issue of adjusting for multiple testing. There are different approaches from different traditions to that. When conducting many independent t-tests, it seems straight-forward to adjust for multiple testing, although the general advise to always adjust for multiple testing is not warranted [@althouse2016adjust]. Another approach is to conduct ANOVA, which is an omnibus test, with the null-hypothesis of no effect of the treatment conditions together versus the control. To check for individual differences between experimental groups, post-hoc tests can be conducted with respective appreciation of multiple testing adjustments. This is appropriate if one has no specific hypotheses to begin with. If one has these hypotheses, however, one can use ANOVA with planned contrasts (e.g. [@field2012discovering]), which is then again equivalent to the results of a regression with dummy variables coded according to the specified contrasts. When I use multiple outcomes in my pre-registered hypotheses, the expectation is not that any of the outcomes shows an effect (in which case adjustment for multiple testing should be done), but rather a joint pattern of effects.]
 
 
 
@@ -371,7 +387,7 @@ ggplot(pdata_neutral_correction, aes(x = outcome, y = estimate, color = correcti
 #sjPlot::save_plot("./figures/p_neutral_correction.png", width = 24, height = 16)
 ```
 
-## Counter-frame {-}
+## Counterframe correction {-}
 
 ```{r fig-3, fig.align="center", fig.cap="Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
 
@@ -431,8 +447,10 @@ ggplot(pdata_counter_frame, aes(x = outcome, y = estimate, color = correction, s
 ```
 
 
-
+\newpage
 # Conclusion
+
+*t.b.d.*
 
 Summary: 
 
@@ -442,12 +460,12 @@ Summary:
 
 Limitations:
 
-* is it really emotions or "just" the pictures?
+* No distinction between emotional framing and visual cues.
 
 
 Implications:
 
-* When misinformation is emotionally charged, fact-checkers may have to think about counter-frames to eliminate the misinformation effect.
+* When misinformation is emotionally charged, fact-checkers may have to think about counterframes to eliminate the misinformation effect.
 * a lack of acceptance of novel food technologies against scientific evidence can be seen as as a threat for the development of a more resilient food system @siegrist2020consumer.  genetic engineering provides avenues with large potential benefits @roberts2018nobel, @planck2019scientists, which may be impeded by public resistance possibly originating from misleading claims easily disseminated through online media.
 * Similar effects possible on other issues where misinformation loads on strong emotions, e.g. health interventions such as vaccinations.
 

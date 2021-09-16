@@ -312,9 +312,7 @@ ggplot(pdata_h1, aes(x = outcome, y = estimate, color = "1")) +
 
 ## Effectiveness of neutral correction {-}
 
-After having established that a persuasive, emotionally framed message containing misinformation can influence policy opinion and increase moral conviction, I now report the results of the neutral correction in figure \@ref(fig:neutral-correction).
-
-* the neutral correction is effective for the low emotion misinformation, but not the high emotion misinformation
+After having established that a persuasive, emotionally framed message containing misinformation can influence policy opinion and increase moral conviction, I now report the results of the neutral correction in figure \@ref(fig:neutral-correction). The neutral correction is effective for the low emotion misinformation, but not the high emotion misinformation. The emotional frame of the misinformation therefore moderates the correcion effectiveness. Although weakened, the effects on policy opinion and moral conviction induced by the high emotion misinformation persist after the correction, confirming H2b. Even if the correction significantly moves the factual belief after the high emotion misinformation, there still persists an effect of the misinformation relative to the control group. The correction is therefore not successful in eradicating the misinformation effect, which rejects H2a. In sum, there is no belief echo, but a moderation of the correction effectiveness.
 
 
 ```{r neutral-correction, fig.align="center", fig.cap="Effects of the neutral correction for misinformation with low and high emotional framing Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}

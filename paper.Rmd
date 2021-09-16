@@ -55,12 +55,9 @@ Fueled by the fast dissemination through digital media, the issue of various for
 To limit the danger from inaccurate or misleading information, efforts of fact-checking or corrective information more generally are widely applied [@walter2020fact]. A common finding in the maturing literature on corrective information is that these interventions are usually successful in reducing misperceptions, but may not translate to other outcomes such as attitudes, candidate evaluations or blame attribution [@bisgaard2019getting; @nyhan2019taking; @swire2019they; @thorson2016belief].
 
 <!-- % still, we know little about the role of discrete emotions in interacting with misinformation and corrective information -->
-<<<<<<< HEAD
+
 While this has been linked to affect [@thorson2016belief], the connection of distinct emotions to both susceptibility to misinformation, and the effectiveness of corrective information is under-explored. This is unfortunate given the important role that emotional appeals play in the dissemination of false or misleading information. We know that false news spread faster than true news, possibly because they are more likely to evoke emotions of surprise and disgust [@vosoughi2018spread]. In general, moral-emotional language is rewarded on social media [@brady2017emotion].
-=======
-While this has been linked to affect [@thorson2016belief], the connection of distinct emotions to both susceptibility to misinformation, and the effectiveness of corrective information is under-explored (exceptions include [@ecker2011terrorists; @martel2020reliance; @rosenzweig2021happiness; @weeks2015emotions]. This is unfortunate given the important role that emotional appeals play in the dissemination of false or misleading information. We know that false news spread faster than true news, possibly because they are more likely to evoke emotions of surprise and disgust [@vosoughi2018spread]. In general, moral-emotional language is rewarded on social media [@brady2017emotion].
->>>>>>> 740353a539dd566260f406815719bb8eaddeba64
-<!-- and populist parties use more negative emotional appeals in their communication than non-populist parties [@widmann2021how]. -->
+
 
 <!-- % emotion in political science -->
 In this study, I follow recent work in political science inspired by moral psychology. Most relevant for this study, @clifford2019emotional finds that a persuasive emotional frame loading on emotions of anger and disgust increases the perception of an issue as being one of moral conviction [@skitka2020psychology; @wisneski2017moralization]. 
@@ -91,11 +88,7 @@ In a broader perspective, these results inform further studies and policy interv
 * People may resist corrective information due to directional motivated reasoning, sometimes even leading to "backfire" effects [@nyhan2010corrections] where misperceptions are more strongly held after correction, but most of the time corrections are at least partially successful [@walter2020fact; @wood2019elusive].
 * However, while corrective information usually moves factual beliefs in the appropriate direction, the effects on other outcomes such as attitudes, blame attributions, or evaluations are mixed [@bisgaard2019getting; @nyhan2019taking; @swire2019they]
 * An especially troubling case are "belief echoes", where effects of misinformation on attitudes persist despite successful correction of the factual belief [@thorson2016belief].
-<<<<<<< HEAD
 * Although we know that emotions may contribute to the spread of false information [@vosoughi2018spread], there is little evidence on the role of emotions for misinformation and corrective information (exceptions include [@ecker2011terrorists; @martel2020reliance; @rosenzweig2021happiness; @weeks2015emotions]).
-=======
-* Although we know that emotions may contribute to the spread of false information [@vosoughi2018spread], there is little evidence on the role of emotions for misinformation and corrective information.
->>>>>>> 740353a539dd566260f406815719bb8eaddeba64
 
 
 ## Emotional framing and moralization {-}
@@ -103,7 +96,6 @@ In a broader perspective, these results inform further studies and policy interv
 *t.b.d.*
 
 * Emotional framing is an important feature of political communication, and theories such as cognitive appraisal theory [@moors2013appraisal] or affective intelligence theory [@marcus2000affective; @marcus2019applying] provide frameworks for empirical expectaitoins about specific emotions.
-<<<<<<< HEAD
 * Findings from moral psychology on moralization through disgust.
 * Importance of moral conviction for compromise, openness to scientific findings on consequences versus absolutist opposition.
 * Of course, people are free to have moral convictions about any issue, but if emotional frames can induce moral conviction, we might have to worry about emotionally framed **mis**information also inducing moral conviction.
@@ -116,29 +108,13 @@ In a broader perspective, these results inform further studies and policy interv
 <!-- % -->
 <!-- %Applied to political phenomena, distinct emotions cause different types of actions and attitudes: fear leads to caution and openness, and anger to more confident and aggressive responses (Druckman and McDermott, 2008; MacKuen et al., 2010). For instance, whereas fear and anger both tend to increase intolerance and threat perceptions (e.g. Erişen and Kentmen-Cin, 2017), they lead to distinct ways of reacting to terrorist threats (Lerner et al., 2003). Fearful citizens are more wary of the increased risk and turn to isolationism, while angry citizens are less risk-averse and tend to favour pro-active intervention (Huddy et al., 2007). Anxious citizens are also more likely to seek out new information and process this carefully (Brader et al., 2008; Marcus et al., 2000; Merolla and Zechmeister, 2009; Valentino et al., 2008). Finally, enthusiasm increases the willingness to participate in politics, but like anger it also increases less careful forms of information-processing (Brader, 2006; Marcus et al., 2000). -->
 
-=======
 
-
-* Findings from moral psychology on moralization through disgust.
-* Importance of moral conviction for compromise, openness to scientific findings on consequences versus absolutist opposition.
-
-
-Although there is a rich literature on emotions in politics shedding light on its effect on information processing, political learning and participation, the connection of distinct emotions to both susceptibility to misinformation and the effectiveness of corrective information is under-explored.
-
-
-A study has shown that moral shock works to moralize attitudes towards GM food.
-
-
-
-However, the main part of the material used there can be classified as misinformation
-GM food is an issue on which disinformation exists. This does not mean that there can or should be no criticism, but concrete adverse health effects are not warranted by evidence. Least knowledgeable people are the fiercest opponents. So
 
 <!-- % From Vasiloupolou / Wagner -->
 <!-- %Early research into emotional reactions either used one simple positive–negative dimension or a two-dimensional valence model (Marcus, 2003; Marcus et al., 2000). More recently, researchers have argued that distinct emotions may characterise individuals’ reactions (e.g. Huddy et al., 2007; Larsen and McGraw, 2011; Petersen, 2010; Smith et al., 2008; Valentino et al., 2008, 2011; Weber, 2012; see also Conover and Feldman, 1986). Appraisal theories of emotions suggest that various distinct emotions arise due to individuals’ cognitive interpretation of the situation they experience (e.g. Roseman, 1991; Smith and Ellsworth, 1985; for a review, see Brader and Marcus, 2013). Neuroscientific theories based on the neural processes that generate emotional responses have also increasingly turned towards a three-dimensional model of emotions that distinguishes between fear, anger and enthusiasm (Brader and Marcus, 2013; Lerner and Keltner, 2001). Research in political psychology building on both appraisal and neural process theories has therefore focused in particular on the causes and consequences of anger, fear1 and enthusiasm as distinct emotions (Carver and Harmon-Jones, 2009; Conover and Feldman, 1986; Huddy et al., 2005, 2007; Lerner and Keltner, 2000, 2001; Petersen, 2010; Smith and Ellsworth, 1985; Valentino et al., 2011). -->
 <!-- % -->
 <!-- %Applied to political phenomena, distinct emotions cause different types of actions and attitudes: fear leads to caution and openness, and anger to more confident and aggressive responses (Druckman and McDermott, 2008; MacKuen et al., 2010). For instance, whereas fear and anger both tend to increase intolerance and threat perceptions (e.g. Erişen and Kentmen-Cin, 2017), they lead to distinct ways of reacting to terrorist threats (Lerner et al., 2003). Fearful citizens are more wary of the increased risk and turn to isolationism, while angry citizens are less risk-averse and tend to favour pro-active intervention (Huddy et al., 2007). Anxious citizens are also more likely to seek out new information and process this carefully (Brader et al., 2008; Marcus et al., 2000; Merolla and Zechmeister, 2009; Valentino et al., 2008). Finally, enthusiasm increases the willingness to participate in politics, but like anger it also increases less careful forms of information-processing (Brader, 2006; Marcus et al., 2000). -->
 
->>>>>>> 740353a539dd566260f406815719bb8eaddeba64
 
 ## Empirical expectations {-}
 
@@ -184,23 +160,12 @@ The topic of GM food is particularly suited for this study because it is an issu
 
 # Data & Methods
 
-<<<<<<< HEAD
 To investigate the direct effects of misinformation and corrective information conditional on emotional framing, I conducted a pre-registered survey experiment.^[The pre-registration can be found on OSF: https://osf.io/y63xu.] The experiment was implemented within wave 53 of the German Internet Panel (GIP) [@blom2015setting]. The GIP is a longitudinal panel survey based on a probability sample of the general population in Germany. Fieldwork for this study took place in May 2021 and the sample size reached 4,260 respondents.
 
 The between-subjects survey experiment followed a 3 $\times$ 3 design varying both misinformation (none, low emotional framing, high emotional framing) and corrective information (none, neutral correction, counterframe correction). Respondents were randomly assigned to one of the nine resulting groups, thus yielding eight treatment conditions and one control condition were no information treatment was shown.
 
 At the end of the survey, respondents received an extensive debriefing clarifying the sources of all information that was shown and on the intention of the experiment. Because all shown information has in a similar format been in the media^[www.welt.de/newsticker/news1/article109594074/Bundesinstitut-Genmais-Schaeden-nicht-ausreichend-belegt], there is no deception taking place. The study was approved by the team operating the GIP, with the goal of designing the study in a way that it is a pleasant experience for respondents.
-=======
-To investigate the direct effects of misinformation and corrective information conditional on emotional framing, I conducted a pre-registered survey experiment.^[Pre-registration can be found on OSF: https://osf.io/y63xu.] The experiment was implemented within wave 53 of the German Internet Panel (GIP) [@blom2015setting]. The GIP is a longitudinal panel survey based on a probability sample of the general population in Germany. Fieldwork for this study took place in May 2021 and the sample size reached 4,260 respondents.
 
-The between-subjects survey experiment followed a 3 $\times$ 3 design varying both misinformation (none, low emotional framing, high emotional framing) and corrective information (none, neutral correction, counterframe correction). Respondents were randomly assigned to one of the nine resulting groups, thus yielding eight treatment conditions and one control condition were no information treatment was shown.
-
-At the end of the survey, respondents received an extensive debriefing clarifying the sources of all information that was shown and on the intention of the experiment. Because all shown information has in a similar format been in the media^[www.welt.de/newsticker/news1/article109594074/Bundesinstitut-Genmais-Schaeden-nicht-ausreichend-belegt], there is no deception taking place. The study was approved by the team operating the GIP, with the goal of designing the study in a way that it is a pleasant experience for respondents.
-
->>>>>>> 740353a539dd566260f406815719bb8eaddeba64
-
-
-<<<<<<< HEAD
 ## Treatment Material {-}
 
 The experimental treatment consists of a combination of two types of information, each mimicking a short online news article. One type of information reports the results of a study claiming that genetically modified corn lead to increased cancer rates in rats, and features the headline *"GM corn-fed rats die earlier"*. The wording is partly taken from actual news coverage of the study in 2012, and partly from treatment material in @clifford2019emotional. The respective study has been retracted due to non-adherence to scientific procedures, and the current scientific evidence does not point to severe health problems associated with genetically modified animal feed [@brody2018are]. The information within the study can thus be classified as misinformation.^[This is consistent with a definition of resulting mis*perceptions* as "factual beliefs that are false or contradict the best available evidence in the public domain" [@flynn2017nature, p.128]. If one would presume the intent to mislead, this would then be classified as disinformation.] I vary this misinformation to be either low or high in emotional framing by ex- or including graphical images of a rat with a cancer tumor and rotten corn, images that are taken from @clifford2019emotional and shown to induce negative feelings, specifically disgust.
@@ -209,16 +174,6 @@ The second type of information reports the accurate scientific consensus that GM
 
 The misinformation (if any is assigned) is always shown first, immediately followed by the corrective information (if any is assigned). For respondents, the manipulation is thus designed in a way that both types of information "hits them between the eyes" [@kuklinski2000misinformation, p.805].
 
-
-=======
-The experimental treatment consists of a combination of two types of information, each mimicking a short online news article. One type of information reports the results of a study claiming that genetically modified corn lead to increased cancer rates in rats, and features the headline *"GM corn-fed rats die earlier"*. The wording is partly taken from actual news coverage of the study in 2012, and partly from treatment material in @clifford2019emotional. The respective study has been retracted due to non-adherence to scientific procedures, and the current scientific evidence does not point to severe health problems associated with genetically modified animal feed [@brody2018are]. The information within the study can thus be classified as misinformation.^[This is consistent with a definition of resulting mis*perceptions* as "factual beliefs that are false or contradict the best available evidence in the public domain" [@flynn2017nature, p.128]. If one would presume the intent to mislead, this would then be classified as disinformation.] I vary this misinformation to be either low or high in emotional framing by ex- or including graphical images of a rat with a cancer tumor and rotten corn, images that are taken from @clifford2019emotional and shown to induce negative feelings, specifically disgust.
-
-The second type of information reports the accurate scientific consensus that GM food is generally safe to eat, that a study showing cancer growth in rats due to GM feed has been retracted, and that genetically modifying plants for the food industry is not a new phenomenon. This piece of information is a correction to the misinformation in that it reflects best available scientific evidence and it is constructed to conform to best practice standards of debunking information [@lewandowsky2020debunking]. As a neutral correction, this piece of information corrects the misinformation about concrete health risks from GM food in a text-only format. The headline for the neutral correction reads *"Genetic engineering does not introduce novel risks"*. By negating the risks, it still stays within the overall framing of GM food as possibly risky, and does not add specific further information about benefits from GM food. This is done in a further condition, where the corrective information is embedded in a counterframe, emphasizing positive aspects of GM food, such as its potential to contribute to more sustainable agriculture by reducing pesticides, and its potential to fight malnutrition. Here, the headline reads *"Genetic research for a more sustainable agriculture"*. ^[Screenshots of the shown information treatments in the German original are included in the Appendix in figures \@ref(fig:screenshot-low-misinfo) to \@ref(fig:screenshot-counterframe).]
-
-The misinformation (if any is assigned) is always shown first, immediately followed by the corrective information (if any is assigned). For respondents, the manipulation is thus designed in a way that both types of information "hits them between the eyes" [@kuklinski2000misinformation, p.805].
-
-
->>>>>>> 740353a539dd566260f406815719bb8eaddeba64
 ## Outcome measures {-}
 
 To acknowledge findings from the maturing corrective information literature on varying correction success for different outcomes, I include a set of several measures.
@@ -303,11 +258,9 @@ First, \@ref(fig:misinfo-only) reports the effects of receiving only the misinfo
 
 In the top row of the lower right panel, we see the largest effect, which results from the high emotional frame on the factual belief outcome. Respondents receiving the high emotional misinformation about GM food agree to the statement that GM food is safe to eat with a score that is 16 percentage points less than the control group. For the low emotion misinformation, the effect is 13 percentage points, indicating that both messages are persuasive in bringing the average factual belief farther from the scientific consensus belief.
 
-<<<<<<< HEAD
 Concerning effects on emotions, policy opinion and moral conviction, results largely replicate results by @clifford2019emotional.
 
-=======
->>>>>>> 740353a539dd566260f406815719bb8eaddeba64
+
 ```{r misinfo-only, fig.align="center", fig.cap="Effects of misinformation with low and high emotional framing without following correction. Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
 # H1: misinformation effect
 pdata_h1_belief_policy <- rbind(get_pdata(lm_moral_conviction, c(4, 7), "Moral conviction"),
@@ -360,16 +313,12 @@ ggplot(pdata_h1, aes(x = outcome, y = estimate, color = "1")) +
 
 ## Effectiveness of neutral correction {-}
 
-<<<<<<< HEAD
 After having established that a persuasive, emotionally framed message containing misinformation can influence policy opinion and increase moral conviction, I now report the results of the neutral correction in figure \@ref(fig:neutral-correction).
 
 * the neutral correction is effective for the low emotion misinformation, but not the high emotion misinformation
 
 
 ```{r neutral-correction, fig.align="center", fig.cap="Effects of the neutral correction for misinformation with low and high emotional framing Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
-=======
-```{r fig-2, fig.align="center", fig.cap="Effects of the neutral correction for misinformation with low and high emotional framing Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
->>>>>>> 740353a539dd566260f406815719bb8eaddeba64
 
 # neutral correction for both low and high misinformation
 
@@ -424,14 +373,11 @@ ggplot(pdata_neutral_correction, aes(x = outcome, y = estimate, color = correcti
 
 ## Counterframe correction {-}
 
-<<<<<<< HEAD
 Finally, results from the counterframe message show that a correction embedded in a persuasive positive frame is successful in bringing all outcome measures to the control group level (see figure \@ref(fig:counterframe). 
 It should be noted, however, that there is also no positive effect of the positively framed message on beliefs and opinions towards GM food, although the counterframe message itself is persuasive (figure \@ref(fig:info-only) in the appendix). 
 
 ```{r counterframe, fig.align="center", fig.cap="Effects of the counterframe correction for misinformation with low and high emotional framing. Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
-=======
-```{r fig-3, fig.align="center", fig.cap="Effects of the counterframe correction for misinformation with low and high emotional framing. Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
->>>>>>> 740353a539dd566260f406815719bb8eaddeba64
+
 
 
 
@@ -536,11 +482,7 @@ Implications:
 
 ## Information effects
 
-<<<<<<< HEAD
 ```{r info-only, fig.align="center", fig.cap="Effects of the neutral correction and counterframe correction without previous misinformation. Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
-=======
-```{r fig-4, fig.align="center", fig.cap="Effects of the neutral correction and counterframe correction without previous misinformation. Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
->>>>>>> 740353a539dd566260f406815719bb8eaddeba64
 
 # Appendix
 # info only

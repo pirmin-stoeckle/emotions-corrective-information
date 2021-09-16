@@ -62,7 +62,6 @@ While this has been linked to affect [@thorson2016belief], the connection of dis
 <!-- % emotion in political science -->
 In this study, I follow recent work in political science inspired by moral psychology. Most relevant for this study, @clifford2019emotional finds that a persuasive emotional frame loading on emotions of anger and disgust increases the perception of an issue as being one of moral conviction [@skitka2020psychology; @wisneski2017moralization]. 
 Moral conviction, i.e. the conviction that the handling of an issue touches morality and is about fundamental right or wrong, can be seen as a dimension of attitude strength [@skitka2018attitude]. 
-While it is often seen as a binary categorization whether or not an issue is a moral one, there is quite some variation in the extent of moralization within issues [@ryan2014reconsidering] with distinct behavioral consequences, such as an absolute unwillingness to compromise [@ryan2017no] or a tendency to view that issue in absolutist term and to be less likely to be open for information about consequences [@ryan2019actions]. 
 
 <!-- % get more concrete linking belief echoes / affective perseverance and specific emotion with possible connection to moralization -->
 In his study, Clifford shows that disgust-evoking messages can increase moral conviction with its consequences on polarizing attitudes. However, some of the treatment material used in his study comes from a later retracted study linking GMO and cancer. Such a piece of information can be classified as misinformation in the sense of going against "best available evidence in the public sphere"[@flynn2017nature, p.128].
@@ -97,7 +96,7 @@ In a broader perspective, these results inform further studies and policy interv
 
 * Emotional framing is an important feature of political communication, and theories such as cognitive appraisal theory [@moors2013appraisal] or affective intelligence theory [@marcus2000affective; @marcus2019applying] provide frameworks for empirical expectaitoins about specific emotions.
 * Findings from moral psychology on moralization through disgust.
-* Importance of moral conviction for compromise, openness to scientific findings on consequences versus absolutist opposition.
+* Importance of moral conviction for compromise, openness to scientific findings on consequences versus absolutist opposition. While it is often seen as a binary categorization whether or not an issue is a moral one, there is quite some variation in the extent of moralization within issues [@ryan2014reconsidering] with distinct behavioral consequences, such as an absolute unwillingness to compromise [@ryan2017no] or a tendency to view that issue in absolutist term and to be less likely to be open for information about consequences [@ryan2019actions]. 
 * Of course, people are free to have moral convictions about any issue, but if emotional frames can induce moral conviction, we might have to worry about emotionally framed **mis**information also inducing moral conviction.
 
 <!-- Although there is a rich literature on emotions in politics shedding light on its effect on information processing, political learning and participation, the connection of distinct emotions to both susceptibility to misinformation and the effectiveness of corrective information is under-explored. -->

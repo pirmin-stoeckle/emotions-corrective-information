@@ -3,14 +3,14 @@ title: |
   | Emotional framing and the effectiveness of 
   | corrective information^[I thank Thomas Bräuninger, Sebastian Juhl, the GIP team, and participants of the Fall 2020 CDSS workshop in political science at the University of Mannheim for excellent comments and helpful suggestions on this study. This work was supported by the German Research Foundation (DFG) via the Collaborative Research Center (SFB) 884 on "The Political Economy of Reforms" (Project C2) and the University of Mannheim’s Graduate School of Economics and Social Sciences.]
 author: |
-  | *Working paper*
+  | *work in progress*
   |
   | Pirmin Stöckle^[Corresponding address: pirmin.stoeckle@gess.uni-mannheim.de]
   | GESS and SFB 884, University of Mannheim
 date: September 16, 2021
 linestretch: 1.5
 colorlinks: true
-abstract: \setstretch{1} \noindent Concerns about various forms of misinformation and its fast dissemination through online media have generated huge interest into ways to effectively correct false claims. An under-explored mechanism in this research is the role of distinct emotions. How do emotional appeals interact with corrective information? Specifically, I focus on the emotion of disgust, which has been shown to be linked to the moralization of attitudes, which in turn reduces the impact of empirical evidence on attitudes and makes compromise less likely. Substantively, I investigate the issue of genetically modified (GM) food. I implement a pre-registered survey experiment within a panel study based on a probability sample of the general population in Germany (N = 4,000). Results show what we have learned about the question. This study provides evidence on the effect of emotionally charged disinformation on perceptions of GM food, and ways to effectively correct false claims. In a broader perspective, these results inform further studies and policy interventions on other issues where disinformation loads on strong emotions, ranging from social policy over immigration to health interventions such as vaccinations. \vspace{.8cm}
+abstract: \setstretch{1} \noindent Concerns about various forms of misinformation and its fast dissemination through online media have generated huge interest into ways to effectively correct false claims. An under-explored mechanism in this research is the role of distinct emotions. How do emotional appeals interact with corrective information? Specifically, I focus on the emotion of disgust, which has been shown to be linked to the moralization of attitudes, which in turn reduces the impact of empirical evidence on attitudes and makes compromise less likely. Substantively, I investigate the issue of genetically modified (GM) food. I implement a pre-registered survey experiment manipulating both misinformation and corrective information treatments within a panel study based on a probability sample of the general population in Germany. Results show, first, that an emotionally framed piece of misinformation can increase moralization, replicating previous findings. Second, a neutral correction to the misinformation is only effective if the misnformation does not include a strong emotional frame, whereas a correction embedded in a counterframe is effective for both low and high emotional misinformation. In a broader perspective, these results inform further studies and policy interventions on other issues where disinformation loads on strong emotions, ranging from social policy over immigration to health interventions such as vaccinations. \vspace{.8cm}
 # abstract-template: Everyone agrees that this issue is really important. But we do not know much about this specific question, although it matters a great deal, for these reasons. We approach the problem from this perspective. Our research design focuses on these cases and relies on these data, which we analyze using this method. Results show what we have learned about the question. They have these broader implications.
 
 bibliography: references.bib # to be downloaded from citavi or google drive
@@ -60,22 +60,25 @@ While this has been linked to affect [@thorson2016belief], the connection of dis
 
 
 <!-- % emotion in political science -->
-In this study, I follow recent work in political science inspired by moral psychology. Most relevant for this study, @clifford2019emotional finds that a persuasive emotional frame loading on emotions of anger and disgust increases the perception of an issue as being one of moral conviction [@skitka2020psychology; @wisneski2017moralization]. 
-Moral conviction, i.e. the conviction that the handling of an issue touches morality and is about fundamental right or wrong, can be seen as a dimension of attitude strength [@skitka2018attitude]. 
-
+In this study, I follow recent work in political science inspired by moral psychology. Most relevant for this study, @clifford2019emotional finds that a persuasive emotional frame loading on emotions of anger and disgust increases the perception of an issue as being one of moral conviction [@skitka2020psychology; @wisneski2017moralization]. While it is often seen as a binary categorization whether or not an issue is a moral one, there is quite some variation in the extent of moralization within issues [@ryan2014reconsidering] with distinct behavioral consequences, such as an absolute unwillingness to compromise [@ryan2017no] or a tendency to view that issue in absolutist term and to be less likely to be open for information about consequences [@ryan2019actions]. 
+<!-- Moral conviction, i.e. the conviction that the handling of an issue touches morality and is about fundamental right or wrong, can be seen as a dimension of attitude strength [@skitka2018attitude].  -->
 <!-- % get more concrete linking belief echoes / affective perseverance and specific emotion with possible connection to moralization -->
-In his study, Clifford shows that disgust-evoking messages can increase moral conviction with its consequences on polarizing attitudes. However, some of the treatment material used in his study comes from a later retracted study linking GMO and cancer. Such a piece of information can be classified as misinformation in the sense of going against "best available evidence in the public sphere"[@flynn2017nature, p.128].
-From findings of belief echoes [@thorson2016belief] and affective perseverance [@sherman2002affective] we might suspect that such emotional effects of frames may persist even in the face of successful factual correction.
+<!-- In his study, @clifford2019emotional shows that disgust-evoking messages can increase moral conviction with its consequences on polarizing attitudes. However, some of the treatment material used in his study comes from a later retracted study linking GMO and cancer. Such a piece of information can be classified as misinformation in the sense of going against "best available evidence in the public sphere"[@flynn2017nature, p.128]. -->
+
 
 <!-- % Contribution bringing belief echoes and discrete emotions together -->
-This study contributes to the literature of corrective information by linking the concept of belief echoes to the perseverance of specific emotions with related consequences on attitudes. Specifically, it provides evidence on the effect of emotionally charged disinformation on perceptions of GM food, and ways to effectively correct false claims.
+In the context of misinformation, it seems possible and worrisome that such an increase in moral conviction through emotional framing may also take place through a piece of factually incorrect information. If this is the case, how does the evoked information interfere with subsequent efforts to correct the misinformation? Do emotions evoked by a piece of misinformation make effective corrections less likely? And do such misinformation induced emotions and related attitudes persist despite successful correction?
+<!-- From findings of belief echoes [@thorson2016belief] and affective perseverance [@sherman2002affective] we can further suspect that such emotional effects of frames may persist even in the face of successful factual correction. -->
+<!-- This study contributes to the literature of corrective information by linking the concept of belief echoes to the perseverance of specific emotions with related consequences on attitudes.  -->
+Substantively, I provide evidence on the effect of emotionally charged misinformation on perceptions of GM food, and ways to effectively correct false claims.
 
+Results show, first, that an emotionally framed piece of misinformation can increase moralization, replicating previous findings. Second, a neutral correction to the misinformation is only effective if the misnformation does not include a strong emotional frame, whereas a correction embedded in a counterframe is effective for both low and high emotional misinformation.
 <!-- % Final Punchline on broader relevance -->
-In the view of many scientists [@roberts2018nobel, @planck2019scientists], genetic engineering provides avenues with large potential benefits, which may be impeded by public resistance possibly originating from misleading claims easily disseminated through online media.
+<!-- In the view of many scientists [@roberts2018nobel, @planck2019scientists], genetic engineering provides avenues with large potential benefits, which may be impeded by public resistance possibly originating from misleading claims easily disseminated through online media. -->
 In a broader perspective, these results inform further studies and policy interventions on other issues where disinformation loads on strong emotions, ranging from social policy over immigration to health interventions such as vaccinations.
 
 
-\newpage
+
 # Theory
 
 ## Misinformation and corrective information {-}
@@ -86,7 +89,7 @@ In a broader perspective, these results inform further studies and policy interv
 * Wide-spread misperceptions may distort public opinion and corrective information (fact-checking) is one way to tackle the problem.
 * People may resist corrective information due to directional motivated reasoning, sometimes even leading to "backfire" effects [@nyhan2010corrections] where misperceptions are more strongly held after correction, but most of the time corrections are at least partially successful [@walter2020fact; @wood2019elusive].
 * However, while corrective information usually moves factual beliefs in the appropriate direction, the effects on other outcomes such as attitudes, blame attributions, or evaluations are mixed [@bisgaard2019getting; @nyhan2019taking; @swire2019they]
-* An especially troubling case are "belief echoes", where effects of misinformation on attitudes persist despite successful correction of the factual belief [@thorson2016belief].
+* Especially troubling cases are "affective perseverance" [@sherman2002affective], and "belief echoes", where effects of misinformation on attitudes persist despite successful correction of the factual belief [@thorson2016belief].
 * Although we know that emotions may contribute to the spread of false information [@vosoughi2018spread], there is little evidence on the role of emotions for misinformation and corrective information (exceptions include [@ecker2011terrorists; @martel2020reliance; @rosenzweig2021happiness; @weeks2015emotions]).
 
 
@@ -95,8 +98,8 @@ In a broader perspective, these results inform further studies and policy interv
 *t.b.d.*
 
 * Emotional framing is an important feature of political communication, and theories such as cognitive appraisal theory [@moors2013appraisal] or affective intelligence theory [@marcus2000affective; @marcus2019applying] provide frameworks for empirical expectaitoins about specific emotions.
-* Findings from moral psychology on moralization through disgust.
-* Importance of moral conviction for compromise, openness to scientific findings on consequences versus absolutist opposition. While it is often seen as a binary categorization whether or not an issue is a moral one, there is quite some variation in the extent of moralization within issues [@ryan2014reconsidering] with distinct behavioral consequences, such as an absolute unwillingness to compromise [@ryan2017no] or a tendency to view that issue in absolutist term and to be less likely to be open for information about consequences [@ryan2019actions]. 
+* Findings from moral psychology on moralization through disgust [@clifford2019emotional; @wisneski2017moralization].
+* Importance of moral conviction for compromise, openness to scientific findings on consequences versus absolutist opposition [@ryan2014reconsidering; @ryan2017no; @ryan2019actions].
 * Of course, people are free to have moral convictions about any issue, but if emotional frames can induce moral conviction, we might have to worry about emotionally framed **mis**information also inducing moral conviction.
 
 <!-- Although there is a rich literature on emotions in politics shedding light on its effect on information processing, political learning and participation, the connection of distinct emotions to both susceptibility to misinformation and the effectiveness of corrective information is under-explored. -->
@@ -117,10 +120,9 @@ In a broader perspective, these results inform further studies and policy interv
 
 ## Empirical expectations {-}
 
-From findings on moral conviction and how emotional frames induce it [@clifford2019emotional; @wisneski2017moralization], I expect that a persuasive message evoking negative emotions, notably disgust and anger, can increase perceptions of the respective issue as being one of moral conviction. In order to count as a persuasive message, I expect the message to affect both factual beliefs and policy opinions in its direction.
+From findings on moral conviction and how emotional frames induce it [@clifford2019emotional; @wisneski2017moralization], I expect that a persuasive piece of misinformation evoking negative emotions, notably disgust and anger, can increase perceptions of the respective issue as being one of moral conviction. In order to count as a persuasive message, I expect the message to affect both factual beliefs and policy opinions in its direction.
 
-* H1 A persuasive, emotionally framed message evoking negative emotions of disgust and anger makes individuals more likely to favor policy restrictions on the respective issue and to perceive the issue as one of moral conviction.
-
+* H1 A persuasive, emotionally framed misinformation evoking negative emotions of disgust and anger makes individuals more likely to favor policy restrictions on the respective issue and to perceive the issue as one of moral conviction.
 
 
 <!-- % Moderation -->
@@ -130,8 +132,7 @@ From findings on moral conviction and how emotional frames induce it [@clifford2
 
 Concerning the impact of corrective information, I expect that it will be effective in reducing factual misperceptions, irrespective of the presence of evoked emotions. This is in line with previous research showing no moderation effect on corrections due to emotional framing  [@ecker2011terrorists].
 
-
-* H2a Corrective information is effective in eliminating the misinformation effect on factual beliefs.
+* H2a Corrective information is effective in eliminating the misinformation effect on factual beliefs, irrespective of the emotional framing of the misinformation.
 
 
 <!-- % Belief echoes and affective perseverance -->
@@ -142,7 +143,7 @@ However, similar to previous results on affective perseverance [@sherman2002affe
 * H2b The emotionally framed misinformation leaves an impact on policy opinions, moral conviction, and emotions.
 
 
-Together, hypotheses 2a and 2b represent the existence of a "belief echo", i.e. the continued effect of a piece of misinformation on attitudinal or emotional outcomes, despite successful factual correction. If only H2a is supported, the correction is altogether successful. 
+Together, hypotheses 2a and 2b represent the existence of a "belief echo", i.e. the continued effect of a piece of misinformation on attitudinal or emotional outcomes, despite successful factual correction. If only H2a is supported, the correction is altogether successful. If H2a is not supported, the correction is either completely ineffective or its effectiveness is moderated by the emotional framing of the misinformation.
 
 <!-- % Counter-framing -->
 
@@ -192,7 +193,7 @@ source("data-preparation.R")
 
 Table \@ref(tab:descriptives) shows descriptive statistics of the outcome variables in the control group, which does not get any informational treatment and thus serves as the reference to investigate information effects. On the scale from 0 to 4, anger as an emotional reaction to th issue of GM food was expressed with a mean of 1.7 moderately below the midpoint. Anxiety was above the midpoint with a mean of 2.4 whereas disgust was relatively low with a mean of 1.3, and sadness again moderately below the midpoint with 1.7. These figures indicate that respondents' negative reactions to GM food stem from concerns rather than disgust.
 
-With regard to the factual belief that GM food is safe to eat, the sample is skewed toward the view that this is rather not true (mean = 3.2 on a scale from 1 to 7). When it comes to opinions about policy restrictions for GM food, respondents are rather in favor (mean = 5.2 on a scale from 1 to 7). Finally, the measure of moral conviction is close to the midpoint (mean = 4.4 on a scale from 0 to 8).
+With regard to the factual belief that GM food is safe to eat, the sample is skewed toward the view that this is rather not true (mean = 3.2 on a scale from 1 to 7). When it comes to opinions about policy restrictions for GM food, respondents are rather in favor (mean = 5.2 on a scale from 1 to 7). Finally, the measure of moral conviction is close to the midpoint (mean = 4.4 on a scale from 0 to 8). These results indicate that the misperception that GM food is not safe for one own's health is wide-spread in Germany and that policy restrictions are largely favored, with moderate ties to moral conviction.
 
 
 ```{r descriptives, echo=FALSE, message=FALSE, warning=FALSE}
@@ -257,10 +258,10 @@ First, \@ref(fig:misinfo-only) reports the effects of receiving only the misinfo
 
 In the top row of the lower right panel, we see the largest effect, which results from the high emotional frame on the factual belief outcome. Respondents receiving the high emotional misinformation about GM food agree to the statement that GM food is safe to eat with a score that is 16 percentage points less than the control group. For the low emotion misinformation, the effect is 13 percentage points, indicating that both messages are persuasive in bringing the average factual belief farther from the scientific consensus belief.
 
-Concerning effects on emotions, policy opinion and moral conviction, results largely replicate results by @clifford2019emotional.
+Concerning effects on emotions, policy opinion and moral conviction, results largely replicate results by @clifford2019emotional. The high emotional misinformation induces stronger emotions than the low emotion misinformation, especially for disgust. Both misinformation messages increase demand for restrictive policies, but only the high misinformation misinformation significantly increases moral conviction (by 6 percentage points). There is thus support for H1.
 
 
-```{r misinfo-only, fig.align="center", fig.cap="Effects of misinformation with low and high emotional framing without following correction. Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
+```{r misinfo-only, fig.align="center", fig.cap="Effects of misinformation with low and high emotional framing without following correction. Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="t", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
 # H1: misinformation effect
 pdata_h1_belief_policy <- rbind(get_pdata(lm_moral_conviction, c(4, 7), "Moral conviction"),
                                 get_pdata(lm_policy_opinion, c(4, 7), "Policy restrictions"),
@@ -315,7 +316,7 @@ ggplot(pdata_h1, aes(x = outcome, y = estimate, color = "1")) +
 After having established that a persuasive, emotionally framed message containing misinformation can influence policy opinion and increase moral conviction, I now report the results of the neutral correction in figure \@ref(fig:neutral-correction). The neutral correction is effective for the low emotion misinformation, but not the high emotion misinformation. The emotional frame of the misinformation therefore moderates the correcion effectiveness. Although weakened, the effects on policy opinion and moral conviction induced by the high emotion misinformation persist after the correction, confirming H2b. Even if the correction significantly moves the factual belief after the high emotion misinformation, there still persists an effect of the misinformation relative to the control group. The correction is therefore not successful in eradicating the misinformation effect, which rejects H2a. In sum, there is no belief echo, but a moderation of the correction effectiveness.
 
 
-```{r neutral-correction, fig.align="center", fig.cap="Effects of the neutral correction for misinformation with low and high emotional framing Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
+```{r neutral-correction, fig.align="center", fig.cap="Effects of the neutral correction for misinformation with low and high emotional framing Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="t", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
 
 # neutral correction for both low and high misinformation
 
@@ -370,10 +371,10 @@ ggplot(pdata_neutral_correction, aes(x = outcome, y = estimate, color = correcti
 
 ## Counterframe correction {-}
 
-Finally, results from the counterframe message show that a correction embedded in a persuasive positive frame is successful in bringing all outcome measures to the control group level (see figure \@ref(fig:counterframe). 
-It should be noted, however, that there is also no positive effect of the positively framed message on beliefs and opinions towards GM food, although the counterframe message itself is persuasive (figure \@ref(fig:info-only) in the appendix). 
+Finally, results from the counterframe message show that a correction embedded in a persuasive positive frame is successful in bringing all outcome measures to the control group level (see figure \@ref(fig:counterframe)). 
+It should be noted, however, that there is also no positive effect of the positively framed message on beliefs and opinions towards GM food, although the counterframe message itself is persuasive (figure \@ref(fig:info-only) in the appendix). On average, the two competitive frames seem to cancel each other out. This points to a challenge for science communication within an information environment in which accurate information (even if persuasive) has to compete with inaccurate or misleading information.
 
-```{r counterframe, fig.align="center", fig.cap="Effects of the counterframe correction for misinformation with low and high emotional framing. Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
+```{r counterframe,  fig.align="center", fig.cap="Effects of the counterframe correction for misinformation with low and high emotional framing. Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="t", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
 
 
 
@@ -479,7 +480,7 @@ Implications:
 
 ## Information effects
 
-```{r info-only, fig.align="center", fig.cap="Effects of the neutral correction and counterframe correction without previous misinformation. Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
+```{r info-only,  fig.align="center", fig.cap="Effects of the neutral correction and counterframe correction without previous misinformation. Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="H", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
 
 # Appendix
 # info only

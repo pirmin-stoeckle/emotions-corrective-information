@@ -344,7 +344,7 @@ ggplot(pdata_neutral_correction, aes(x = outcome, y = estimate, color = correcti
   geom_point(size = 1.5, position = position_dodge(width = 0.5)) +
   geom_errorbar(aes(ymin = lower, ymax = upper, linetype = emotion),
                 size = 0.5,
-                width = 0.5,
+                width = 0.25,
                 position = position_dodge(width = 0.5)) +
   geom_hline(yintercept = 0, linetype = 3) +
   ylim(c(-0.2, 0.2)) +
@@ -406,7 +406,7 @@ ggplot(pdata_counter_frame, aes(x = outcome, y = estimate, color = correction, s
   geom_point(size = 1.5, position = position_dodge(width = 0.5)) +
   geom_errorbar(aes(ymin = lower, ymax = upper, linetype = emotion),
                 size = 0.5,
-                width = 0.5,
+                width = 0.25,
                 position = position_dodge(width = 0.5)) +
   geom_hline(yintercept = 0, linetype = 3) +
   ylim(c(-0.2, 0.2)) +

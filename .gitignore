@@ -50,6 +50,7 @@ paper_files
 
 # no need to save the pdf
 paper.pdf
+Stoeckle2021_EmotionsCorrectiveInformation.pdf
 
 # template
 template_markdown.Rmd

@@ -7,7 +7,7 @@ author: |
   |
   | Pirmin Stöckle^[Corresponding address: pirmin.stoeckle@gess.uni-mannheim.de]
   | GESS and SFB 884, University of Mannheim
-date: September 16, 2021
+date: \today
 linestretch: 1.5
 colorlinks: true
 abstract: \setstretch{1} \noindent Concerns about various forms of misinformation and its fast dissemination through online media have generated huge interest into ways to effectively correct false claims. An under-explored mechanism in this research is the role of distinct emotions. How do emotional appeals interact with corrective information? Specifically, I focus on the emotion of disgust, which has been shown to be linked to the moralization of attitudes, which in turn reduces the impact of empirical evidence on attitudes and makes compromise less likely. Substantively, I investigate the issue of genetically modified (GM) food. I implement a pre-registered survey experiment manipulating both misinformation and corrective information treatments within a panel study based on a probability sample of the general population in Germany. Results show, first, that an emotionally framed piece of misinformation can increase moralization, replicating previous findings. Second, a neutral correction to the misinformation is only effective if the misnformation does not include a strong emotional frame, whereas a correction embedded in a counterframe is effective for both low and high emotional misinformation. In a broader perspective, these results inform further studies and policy interventions on other issues where disinformation loads on strong emotions, ranging from social policy over immigration to health interventions such as vaccinations. \vspace{.8cm}

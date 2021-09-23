@@ -9,7 +9,7 @@ rm(list = ls())
 # load data (so far pre-test data)
 #load("Z:/3_current_Pretest/Pretest_W53.RData")
 
-if(exists(here("GIP_W53_V1.RData"))) {
+if(file.exists(here("GIP_W53_V1.RData"))) {
 load(here("GIP_W53_V1.RData"))
 }
 # internal release

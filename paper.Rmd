@@ -83,26 +83,23 @@ In a broader perspective, these results inform further studies and policy interv
 
 ## Misinformation and corrective information {-}
 
-Recent times have seen growing concerns about political misinformation in various forms such as "fake news" or the so called "infodemic" of science misinformation around the COVID-19 pandemic [@jerit2020political; @lazer2018science; @scheufele2021misinformation]. Misinformed individuals hold misperceptions, i.e. "factual beliefs that are false or contradict the best available evidence in the public domain" [@flynn2017nature, p. 128]. Wide-spread belief in misinformation biases collective public opinion and thus poses a threat for democratic outcomes [@kuklinski2000misinformation]. 
+Recent times have seen growing concerns about political misinformation in various forms such as "fake news" or the so called "infodemic" of science misinformation around the COVID-19 pandemic [@jerit2020political; @lazer2018science; @scheufele2021misinformation]. Wide-spread belief in misinformation biases collective public opinion and thus poses a threat for democratic outcomes [@kuklinski2000misinformation]. Misinformed individuals hold misperceptions, i.e. "factual beliefs that are false or contradict the best available evidence in the public domain" [@flynn2017nature, p. 128].
 <!-- This concern is now more prevalent than ever. We live in a complex world and the digital era has made available an abundance of information at a glance. While this gives huge opportunities, concerns about "fake news" and its dissemination through digital technologies and social media are rampant [@allcott2017social; lazer2018science].  -->
-Misperceptions can be due to both disinformation (false or misleading information disseminated with the intent to deceive) or misinformation (false information that may be disseminated with good intentions) [@southwell2018misinformation], as well as the flawed interpretation of accurate information, e.g. through cognitive biases [@lau2001advantages]. 
+While misinformation is often used as an umbrella term for inaccurate information, one can further specify disinformation as false or misleading information disseminated with the intent to deceive, whereas misinformation may be disseminated with good intentions [@southwell2018misinformation].
 
 <!-- * People may resist corrective information due to directional motivated reasoning, sometimes even leading to "backfire" effects [@nyhan2010corrections] where misperceptions are more strongly held after correction, but most of the time corrections are at least partially successful [@walter2020fact; @wood2019elusive]. -->
 
-Because these misperceptions exist, both public and scholarly interest has been directed heavily to the question of how to correct them [@ec2018tackling; @lewandowsky2012misinformation; @walter2018unring}.
-Some studies find that directional motivation not only leads individuals to disregard corrective information, but produces a "backfire" effect where the incorrect prior belief is even strengthened despite having been corrected [@hart2012boomerang; @nyhan2010corrections].
-While being worrisome, this effect is rare. Predispositions such as ideology do affect the way corrective information is processed, but research also shows that corrections by and large work in the expected direction [@guess2018does; @wood2019elusive]. 
-A quickly growing number of studies accumulates evidence on the effects of corrective information and fact-checking in various contexts [@walter2018unring; @walter2019fact].
+As a response to concerns about various forms of misinformation both public and scholarly interest has been directed heavily to the question of how to correct them [@lewandowsky2012misinformation]. Some studies find that directional motivation not only leads individuals to disregard corrective information, but produces a "backfire" effect where the incorrect prior belief is even strengthened despite having been corrected [@hart2012boomerang; @nyhan2010corrections].
+While being worrisome, this effect is rare. Predispositions such as ideology do affect the way corrective information is processed, but research also shows that corrections work in the expected direction [@carnahan2021correcting; @guess2018does; @walter2019fact; @wood2019elusive]. 
+
+However, while corrective information usually moves factual beliefs in the appropriate direction, other outcomes such as attitudes, blame attributions, or evaluations have been shown to be less receptive to corrections [@bisgaard2019getting; @nyhan2019taking; @swire2019they].
 
 
-* However, while corrective information usually moves factual beliefs in the appropriate direction, the effects on other outcomes such as attitudes, blame attributions, or evaluations are mixed [@bisgaard2019getting; @nyhan2019taking; @swire2019they]
 * Especially troubling cases are "affective perseverance" [@sherman2002affective], and "belief echoes", where effects of misinformation on attitudes persist despite successful correction of the factual belief [@thorson2016belief].
 * Although we know that emotions may contribute to the spread of false information [@vosoughi2018spread], there is little evidence on the role of emotions for misinformation and corrective information (exceptions include [@ecker2011terrorists; @martel2020reliance; @rosenzweig2021happiness; @weeks2015emotions]).
 
 
 ## Emotional framing and moralization {-}
-
-*t.b.d.*
 
 * Emotional framing is an important feature of political communication, and theories such as cognitive appraisal theory [@moors2013appraisal] or affective intelligence theory [@marcus2000affective; @marcus2019applying] provide frameworks for empirical expectaitoins about specific emotions.
 * Findings from moral psychology on moralization through disgust [@clifford2019emotional; @wisneski2017moralization].
@@ -441,9 +438,9 @@ ggplot(pdata_counter_frame, aes(x = outcome, y = estimate, color = correction, s
 
 
 \newpage
+
 # Conclusion
 
-*t.b.d.*
 
 Summary: 
 
@@ -454,7 +451,7 @@ Summary:
 
 Limitations:
 
-* No distinction between emotional framing and visual cues (see e.g. @hameleers2020picture).
+* In the experiment, I pictures as visual cues to convey emotional frames. While this manipulation seems to be working for the intended emotion of disgust, I cannot distinguish between the effect of emotional framing through images and the effect of visual cues per se. Research on the effects of visuals for dis- and corrective information shows that visual disinformation is only slightly more credible whereas visual correction is not more effective than textual correction [@hameleers2020picture]. As an explanation, the authors specualte that the textual format works because it "fits fact-checkers' reliance on short, rational and eveidecne-based argumentation" [@hameleers2020picture, p. 297]. In their study, imapges are conceptualized as providing "indexality", i.e. a clearer link to reality, and not emotionality as in my study. Overall, the non-existence of an effect of visual cues as "indexality" on the effectiveness of correction provides support for my argument that in my study, it is the emotionality of the images and not the visual cues per se that make for the different effects, but further research is needed to completely disentangle these effects.
 
 Implications:
 

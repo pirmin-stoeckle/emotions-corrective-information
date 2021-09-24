@@ -172,7 +172,7 @@ At the end of the survey, respondents received an extensive debriefing clarifyin
 
 ## Treatment Material {-}
 
-The experimental treatment consists of a combination of two types of information, each mimicking a short online news article. One type of information reports the results of a study claiming that genetically modified corn lead to increased cancer rates in rats, and features the headline *"GM corn-fed rats die earlier"*. The wording is partly taken from actual news coverage of the study in 2012, and partly from treatment material in @clifford2019emotional. The respective study has been retracted due to non-adherence to scientific procedures, and the current scientific evidence does not point to severe health problems associated with genetically modified animal feed [@brody2018are]. The information within the study can thus be classified as misinformation.^[This is consistent with a definition of resulting mis*perceptions* as "factual beliefs that are false or contradict the best available evidence in the public domain" [@flynn2017nature, p.128]. If one would presume the intent to mislead, this would then be classified as disinformation.] I vary this misinformation to be either low or high in emotional framing by ex- or including graphical images of a rat with a cancer tumor and rotten corn, images that are taken from @clifford2019emotional and shown to induce negative feelings, specifically disgust.
+The experimental treatment consists of a combination of two types of information, each mimicking a short online news article. One type of information reports the results of a study claiming that genetically modified corn lead to increased cancer rates in rats, and features the headline *"GM corn-fed rats die earlier"*. The wording is partly taken from actual news coverage of the study in 2012, and partly from treatment material in @clifford2019emotional. The respective study has been retracted due to non-adherence to scientific procedures, and the current scientific evidence does not point to severe health problems associated with genetically modified animal feed [@brody2018are]. The information within the study can thus be classified as misinformation.^[This is consistent with a definition of resulting mis*perceptions* as "factual beliefs that are false or contradict the best available evidence in the public domain" [@flynn2017nature, p.128]. It should be noted, however, that the treatment material in @clifford2019emotional uses this example only as one of several and remains vague without giving specific scientific information.] I vary this misinformation to be either low or high in emotional framing by ex- or including graphical images of a rat with a cancer tumor and rotten corn, images that are taken from @clifford2019emotional and shown to induce negative feelings, specifically disgust.
 
 The second type of information reports the accurate scientific consensus that GM food is generally safe to eat, that a study showing cancer growth in rats due to GM feed has been retracted, and that genetically modifying plants for the food industry is not a new phenomenon. This piece of information is a correction to the misinformation in that it reflects best available scientific evidence and it is constructed to conform to best practice standards of debunking information [@lewandowsky2020debunking]. As a neutral correction, this piece of information corrects the misinformation about concrete health risks from GM food in a text-only format. The headline for the neutral correction reads *"Genetic engineering does not introduce novel risks"*. By negating the risks, it still stays within the overall framing of GM food as possibly risky, and does not add specific further information about benefits from GM food. This is done in a further condition, where the corrective information is embedded in a counterframe, emphasizing positive aspects of GM food, such as its potential to contribute to more sustainable agriculture by reducing pesticides, and its potential to fight malnutrition. Here, the headline reads *"Genetic research for a more sustainable agriculture"*. ^[Screenshots of the shown information treatments in the German original are included in the Appendix in figures \@ref(fig:screenshot-low-misinfo) to \@ref(fig:screenshot-counterframe).]
 
@@ -195,11 +195,6 @@ source("data-preparation.R")
 
 ## Descriptive statistics {-}
 
-Table \@ref(tab:descriptives) shows descriptive statistics of the outcome variables in the control group, which does not get any informational treatment and thus serves as the reference to investigate information effects. On the scale from 0 to 4, anger as an emotional reaction to th issue of GM food was expressed with a mean of 1.7 moderately below the midpoint. Anxiety was above the midpoint with a mean of 2.4 whereas disgust was relatively low with a mean of 1.3, and sadness again moderately below the midpoint with 1.7. These figures indicate that respondents' negative reactions to GM food stem from concerns rather than disgust.
-
-With regard to the factual belief that GM food is safe to eat, the sample is skewed toward the view that this is rather not true (mean = 3.2 on a scale from 1 to 7). When it comes to opinions about policy restrictions for GM food, respondents are rather in favor (mean = 5.2 on a scale from 1 to 7). Finally, the measure of moral conviction is close to the midpoint (mean = 4.4 on a scale from 0 to 8). These results indicate that the misperception that GM food is not safe for one own's health is wide-spread in Germany and that policy restrictions are largely favored, with moderate ties to moral conviction.
-
-
 ```{r descriptives, echo=FALSE, message=FALSE, warning=FALSE}
 library(modelsummary)
 # only control group
@@ -219,14 +214,12 @@ data %>%
 
 ```
 
+Table \@ref(tab:descriptives) shows descriptive statistics of the outcome variables in the control group, which does not get any informational treatment and thus serves as the reference to investigate information effects. On the scale from 0 to 4, anger as an emotional reaction to th issue of GM food was expressed with a mean of 1.7 moderately below the midpoint. Anxiety was above the midpoint with a mean of 2.4 whereas disgust was relatively low with a mean of 1.3, and sadness again moderately below the midpoint with 1.7. These figures indicate that respondents' negative reactions to GM food stem from concerns rather than disgust.
+
+With regard to the factual belief that GM food is safe to eat, the sample is skewed toward the view that this is rather not true (mean = 3.2 on a scale from 1 to 7). When it comes to opinions about policy restrictions for GM food, respondents are rather in favor (mean = 5.2 on a scale from 1 to 7). Finally, the measure of moral conviction is close to the midpoint (mean = 4.4 on a scale from 0 to 8). These results indicate that the misperception that GM food is not safe for one own's health is wide-spread in Germany and that policy restrictions are largely favored, with moderate ties to moral conviction.
+
+
 ## Moralization through misinformation {-}
-
-I now turn to the effects of the informational treatments on the outcome variables. To quantify these effects, I run separate linear regressions with the respective outcome as the dependent variable and the treatment group indicator as the independent variable. For a more intuitive interpretation of the effect sizes - and to be able to compare outcome variables measured on different scales - I rescale all outcome variables to range from 0 to 1. I do not include any control variables because the random assignment of the experimental design provides the better safeguard against any possible confounders. 
-
-In the appendix, I report the regression tables, in the following I will visualize the estimated regression coefficients for the different treatment conditions. Without any controls, the coefficients refer to the difference in the mean of the outcome between the control and the respective treatment group. ^[The significance of the coefficients is equivalent to running separate t-tests between the group means, which raises the issue of adjusting for multiple testing. There are different approaches from different traditions to that. When conducting many independent t-tests, it seems straight-forward to adjust for multiple testing, although the general advise to always adjust for multiple testing is not warranted [@althouse2016adjust]. Another approach is to conduct ANOVA, which is an omnibus test, with the null-hypothesis of no effect of the treatment conditions together versus the control. To check for individual differences between experimental groups, post-hoc tests can be conducted with respective appreciation of multiple testing adjustments. This is appropriate if one has no specific hypotheses to begin with. If one has these hypotheses, however, one can use ANOVA with planned contrasts (e.g. [@field2012discovering]), which is then again equivalent to the results of a regression with dummy variables coded according to the specified contrasts. When I use multiple outcomes in my pre-registered hypotheses, the expectation is not that any of the outcomes shows an effect (in which case adjustment for multiple testing should be done), but rather a joint pattern of effects.]
-
-
-
 
 ```{r, echo = FALSE}
 # linear regression models with 0-1 rescaled DV
@@ -257,13 +250,9 @@ get_pdata <- function(model, positions = c(), label = NA) {
 
 ```
 
+I now turn to the effects of the informational treatments on the outcome variables. To quantify these effects, I run separate linear regressions with the respective outcome as the dependent variable and the treatment group indicator as the independent variable. For a more intuitive interpretation of the effect sizes - and to be able to compare outcome variables measured on different scales - I rescale all outcome variables to range from 0 to 1. I do not include any control variables because the random assignment of the experimental design provides the better safeguard against any possible confounders. 
 
-First, \@ref(fig:misinfo-only) reports the effects of receiving only the misinformation message. The upper half of the figure shows two plots with the effects of the low emotion misinformation and the lower half shows two plots with the effects of the high emtoion misinformation message. The y-axis indicates the different outcome variables, and the x-axis indicates the effect size relative to the control group, which serves as the reference category for all models. 
-
-In the top row of the lower right panel, we see the largest effect, which results from the high emotional frame on the factual belief outcome. Respondents receiving the high emotional misinformation about GM food agree to the statement that GM food is safe to eat with a score that is 16 percentage points less than the control group. For the low emotion misinformation, the effect is 13 percentage points, indicating that both messages are persuasive in bringing the average factual belief farther from the scientific consensus belief.
-
-Concerning effects on emotions, policy opinion and moral conviction, results largely replicate results by @clifford2019emotional. The high emotional misinformation induces stronger emotions than the low emotion misinformation, especially for disgust. Both misinformation messages increase demand for restrictive policies, but only the high misinformation misinformation significantly increases moral conviction (by 6 percentage points). There is thus support for H1.
-
+In the appendix, I report the regression tables, in the following I will visualize the estimated regression coefficients for the different treatment conditions. Without any controls, the coefficients refer to the difference in the mean of the outcome between the control and the respective treatment group. ^[The significance of the coefficients is equivalent to running separate t-tests between the group means, which raises the issue of adjusting for multiple testing. There are different approaches from different traditions to that. When conducting many independent t-tests, it seems straight-forward to adjust for multiple testing, although the general advise to always adjust for multiple testing is not warranted [@althouse2016adjust]. Another approach is to conduct ANOVA, which is an omnibus test, with the null-hypothesis of no effect of the treatment conditions together versus the control. To check for individual differences between experimental groups, post-hoc tests can be conducted with respective appreciation of multiple testing adjustments. This is appropriate if one has no specific hypotheses to begin with. If one has these hypotheses, however, one can use ANOVA with planned contrasts (e.g. [@field2012discovering]), which is then again equivalent to the results of a regression with dummy variables coded according to the specified contrasts. When I use multiple outcomes in my pre-registered hypotheses, the expectation is not that any of the outcomes shows an effect (in which case adjustment for multiple testing should be done), but rather a joint pattern of effects.]
 
 ```{r misinfo-only, fig.align="center", fig.cap="Effects of misinformation with low and high emotional framing without following correction. Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="t", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
 # H1: misinformation effect
@@ -315,10 +304,13 @@ ggplot(pdata_h1, aes(x = outcome, y = estimate, color = "1")) +
 
 ```
 
+First, \@ref(fig:misinfo-only) reports the effects of receiving only the misinformation message. The upper half of the figure shows two plots with the effects of the low emotion misinformation and the lower half shows two plots with the effects of the high emtoion misinformation message. The y-axis indicates the different outcome variables, and the x-axis indicates the effect size relative to the control group, which serves as the reference category for all models. 
+
+In the top row of the lower right panel, we see the largest effect, which results from the high emotional frame on the factual belief outcome. Respondents receiving the high emotional misinformation about GM food agree to the statement that GM food is safe to eat with a score that is 16 percentage points less than the control group. For the low emotion misinformation, the effect is 13 percentage points, indicating that both messages are persuasive in bringing the average factual belief farther from the scientific consensus belief.
+
+Concerning effects on emotions, policy opinion and moral conviction, results largely replicate results by @clifford2019emotional. The high emotional misinformation induces stronger emotions than the low emotion misinformation, especially for disgust. Both misinformation messages increase demand for restrictive policies, but only the high misinformation misinformation significantly increases moral conviction (by 6 percentage points). There is thus support for H1.
+
 ## Effectiveness of neutral correction {-}
-
-After having established that a persuasive, emotionally framed message containing misinformation can influence policy opinion and increase moral conviction, I now report the results of the neutral correction in figure \@ref(fig:neutral-correction). The neutral correction is effective for the low emotion misinformation, but not the high emotion misinformation. The emotional frame of the misinformation therefore moderates the correcion effectiveness. Although weakened, the effects on policy opinion and moral conviction induced by the high emotion misinformation persist after the correction, confirming H2b. Even if the correction significantly moves the factual belief after the high emotion misinformation, there still persists an effect of the misinformation relative to the control group. The correction is therefore not successful in eradicating the misinformation effect, which rejects H2a. In sum, there is no belief echo, but a moderation of the correction effectiveness.
-
 
 ```{r neutral-correction, fig.align="center", fig.cap="Effects of the neutral correction for misinformation with low and high emotional framing Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="t", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
 
@@ -373,10 +365,10 @@ ggplot(pdata_neutral_correction, aes(x = outcome, y = estimate, color = correcti
 #sjPlot::save_plot("./figures/p_neutral_correction.png", width = 24, height = 16)
 ```
 
-## Counterframe correction {-}
+After having established that a persuasive, emotionally framed message containing misinformation can influence policy opinion and increase moral conviction, I now report the results of the neutral correction in figure \@ref(fig:neutral-correction). The neutral correction is effective for the low emotion misinformation, but not the high emotion misinformation. The emotional frame of the misinformation therefore moderates the correcion effectiveness. Although weakened, the effects on policy opinion and moral conviction induced by the high emotion misinformation persist after the correction, confirming H2b. Even if the correction significantly moves the factual belief after the high emotion misinformation, there still persists an effect of the misinformation relative to the control group. The correction is therefore not successful in eradicating the misinformation effect, which rejects H2a. In sum, there is no belief echo, but a moderation of the correction effectiveness.
 
-Finally, results from the counterframe message show that a correction embedded in a persuasive positive frame is successful in bringing all outcome measures to the control group level (see figure \@ref(fig:counterframe)). 
-It should be noted, however, that there is also no positive effect of the positively framed message on beliefs and opinions towards GM food, although the counterframe message itself is persuasive (figure \@ref(fig:info-only) in the appendix). On average, the two competitive frames seem to cancel each other out. This points to a challenge for science communication within an information environment in which accurate information (even if persuasive) has to compete with inaccurate or misleading information.
+
+## Counterframe correction {-}
 
 ```{r counterframe,  fig.align="center", fig.cap="Effects of the counterframe correction for misinformation with low and high emotional framing. Coefficients (and 95 confidence intervals) from OLS-regressions with the outcome variable rescaled from 0 to 1 and the control group as the reference category.", fig.pos="t", fig.width=8, fig.height=6, message=FALSE, warning=FALSE, echo = FALSE, paged.print=FALSE}
 
@@ -436,11 +428,11 @@ ggplot(pdata_counter_frame, aes(x = outcome, y = estimate, color = correction, s
 
 ```
 
+Finally, results from the counterframe message show that a correction embedded in a persuasive positive frame is successful in bringing all outcome measures to the control group level (see figure \@ref(fig:counterframe)). 
+It should be noted, however, that there is also no positive effect of the positively framed message on beliefs and opinions towards GM food, although the counterframe message itself is persuasive (figure \@ref(fig:info-only) in the appendix). On average, the two competitive frames seem to cancel each other out. This points to a challenge for science communication within an information environment in which accurate information (even if persuasive) has to compete with inaccurate or misleading information.
 
-\newpage
 
 # Conclusion
-
 
 Summary: 
 
@@ -451,15 +443,13 @@ Summary:
 
 Limitations:
 
-* In the experiment, I pictures as visual cues to convey emotional frames. While this manipulation seems to be working for the intended emotion of disgust, I cannot distinguish between the effect of emotional framing through images and the effect of visual cues per se. Research on the effects of visuals for dis- and corrective information shows that visual disinformation is only slightly more credible whereas visual correction is not more effective than textual correction [@hameleers2020picture]. As an explanation, the authors specualte that the textual format works because it "fits fact-checkers' reliance on short, rational and eveidecne-based argumentation" [@hameleers2020picture, p. 297]. In their study, imapges are conceptualized as providing "indexality", i.e. a clearer link to reality, and not emotionality as in my study. Overall, the non-existence of an effect of visual cues as "indexality" on the effectiveness of correction provides support for my argument that in my study, it is the emotionality of the images and not the visual cues per se that make for the different effects, but further research is needed to completely disentangle these effects.
+* In the experiment, I use pictures as visual cues to convey emotional frames. While this manipulation seems to be working for the intended emotion of disgust, I cannot distinguish between the effect of emotional framing through images and the effect of visual cues per se. Research on the effects of visuals for dis- and corrective information shows that visual disinformation is only slightly more credible whereas visual correction is not more effective than textual correction [@hameleers2020picture]. As an explanation, the authors specualte that the textual format works because it "fits fact-checkers' reliance on short, rational and evidence-based argumentation" [@hameleers2020picture, p. 297]. In their study, imapges are conceptualized as providing "indexicality", i.e. a clearer link to reality, and not emotionality as in my study. Overall, the non-existence of an effect of visual cues as "indexicality" on the effectiveness of correction provides support for my argument that in my study, it is the emotionality of the images and not the visual cues per se that make for the different effects, but further research is needed to completely disentangle these effects.
 
 Implications:
 
 * When misinformation is emotionally charged, fact-checkers and science communicators may have to think about counterframes to eliminate the misinformation effect.
 * Concerning GM food, it is argued that a lack of acceptance of novel food technologies against scientific evidence can be seen as as a threat for the development of a more resilient food system [@siegrist2020consumer]. With emotional misinformation in circulation, persuasive counterframes seem necessary to even equal out their effects.
 * Similar effects seem likely on other issues where misinformation loads on strong emotions, e.g. health interventions such as vaccinations.
-
-
 
 
 \newpage

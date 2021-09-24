@@ -83,11 +83,18 @@ In a broader perspective, these results inform further studies and policy interv
 
 ## Misinformation and corrective information {-}
 
-*t.b.d.*
+Recent times have seen growing concerns about political misinformation in various forms such as "fake news" or the so called "infodemic" of science misinformation around the COVID-19 pandemic [@jerit2020political; @lazer2018science; @scheufele2021misinformation]. Misinformed individuals hold misperceptions, i.e. "factual beliefs that are false or contradict the best available evidence in the public domain" [@flynn2017nature, p. 128]. Wide-spread belief in misinformation biases collective public opinion and thus poses a threat for democratic outcomes [@kuklinski2000misinformation]. 
+<!-- This concern is now more prevalent than ever. We live in a complex world and the digital era has made available an abundance of information at a glance. While this gives huge opportunities, concerns about "fake news" and its dissemination through digital technologies and social media are rampant [@allcott2017social; lazer2018science].  -->
+Misperceptions can be due to both disinformation (false or misleading information disseminated with the intent to deceive) or misinformation (false information that may be disseminated with good intentions) [@southwell2018misinformation], as well as the flawed interpretation of accurate information, e.g. through cognitive biases [@lau2001advantages]. 
 
-* Definition of related terms: misinformation, disinformation, fake news, misperceptions [@flynn2017nature; @jerit2020political; @kuklinski2000misinformation].
-* Wide-spread misperceptions may distort public opinion and corrective information (fact-checking) is one way to tackle the problem.
-* People may resist corrective information due to directional motivated reasoning, sometimes even leading to "backfire" effects [@nyhan2010corrections] where misperceptions are more strongly held after correction, but most of the time corrections are at least partially successful [@walter2020fact; @wood2019elusive].
+<!-- * People may resist corrective information due to directional motivated reasoning, sometimes even leading to "backfire" effects [@nyhan2010corrections] where misperceptions are more strongly held after correction, but most of the time corrections are at least partially successful [@walter2020fact; @wood2019elusive]. -->
+
+Because these misperceptions exist, both public and scholarly interest has been directed heavily to the question of how to correct them [@ec2018tackling; @lewandowsky2012misinformation; @walter2018unring}.
+Some studies find that directional motivation not only leads individuals to disregard corrective information, but produces a "backfire" effect where the incorrect prior belief is even strengthened despite having been corrected [@hart2012boomerang; @nyhan2010corrections].
+While being worrisome, this effect is rare. Predispositions such as ideology do affect the way corrective information is processed, but research also shows that corrections by and large work in the expected direction [@guess2018does; @wood2019elusive]. 
+A quickly growing number of studies accumulates evidence on the effects of corrective information and fact-checking in various contexts [@walter2018unring; @walter2019fact].
+
+
 * However, while corrective information usually moves factual beliefs in the appropriate direction, the effects on other outcomes such as attitudes, blame attributions, or evaluations are mixed [@bisgaard2019getting; @nyhan2019taking; @swire2019they]
 * Especially troubling cases are "affective perseverance" [@sherman2002affective], and "belief echoes", where effects of misinformation on attitudes persist despite successful correction of the factual belief [@thorson2016belief].
 * Although we know that emotions may contribute to the spread of false information [@vosoughi2018spread], there is little evidence on the role of emotions for misinformation and corrective information (exceptions include [@ecker2011terrorists; @martel2020reliance; @rosenzweig2021happiness; @weeks2015emotions]).

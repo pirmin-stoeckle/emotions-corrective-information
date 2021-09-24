@@ -1,7 +1,7 @@
 ---
 title: |
-  | Emotional framing and the effectiveness of 
-  | corrective information^[I thank Thomas Bräuninger, Sebastian Juhl, the GIP team, and participants of the Fall 2020 CDSS workshop in political science at the University of Mannheim for excellent comments and helpful suggestions on this study. This work was supported by the German Research Foundation (DFG) via the Collaborative Research Center (SFB) 884 on "The Political Economy of Reforms" (Project C2) and the University of Mannheim’s Graduate School of Economics and Social Sciences.]
+  | Emotional framing, moralization,
+  | and the effectiveness of corrective information^[I thank Thomas Bräuninger, Sebastian Juhl, the GIP team, and participants of the Fall 2020 CDSS workshop in political science at the University of Mannheim for excellent comments and helpful suggestions on this study. This work was supported by the German Research Foundation (DFG) via the Collaborative Research Center (SFB) 884 on "The Political Economy of Reforms" (Project C2) and the University of Mannheim’s Graduate School of Economics and Social Sciences.]
 author: |
   | *work in progress*
   |

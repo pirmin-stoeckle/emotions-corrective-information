@@ -4,24 +4,31 @@ library(sjmisc)
 library(scales)
 library(here)
 
+# make sure to start with a clean workspace
 rm(list = ls())
 
-# load data (so far pre-test data)
-#load("Z:/3_current_Pretest/Pretest_W53.RData")
+# load data 
+# so far, internal release on the sfb drive
+# later (in december) data will be made public through the GESIS data archive
+# https://dbk.gesis.org/dbksearch/GDesc2.asp?no=0109&tab=&ll=10&notabs=1&db=E
 
+# if data is already on hard drive, load into workspace
 if(file.exists(here("GIP_W53_V1.RData"))) {
 load(here("GIP_W53_V1.RData"))
 }
-# internal release
+
+# if data is not in the workspace, load from internal data release
 if(!exists("GIP_W53_V1")) {
   load("//sfb884-share.ad.uni-mannheim.de/data$/2_Data/data_for_R_users/GIP_W53_V1.Rdata")
 }
 
-# later, the data will be made public
-
+# put into data object for more intuitive handling while leacing the raw data intact
 data <- GIP_W53_V1
 names(data)
 
+############################
+# recode variables
+############################
 
 # pre-attitude
 frq(data$CE53482)
@@ -182,4 +189,81 @@ frq(data$info_search)
 # select relevant data
 data <- subset(data, select= c(id_g, pre_attitude:info_search))
 
-#save(data, file = "./data/pre-test.R")
+############################
+# add demographics from core questionnaire
+############################
+
+# if data is already on hard drive, load into workspace
+if(file.exists(here("GIP_W49_V21.RData"))) {
+  load(here("GIP_W49_V2.RData"))
+}
+
+# if data is not in the workspace, load from internal data release
+if(!exists("GIP_W49_V21")) {
+  load("//sfb884-share.ad.uni-mannheim.de/data$/2_Data/data_for_R_users/GIP_W49_V2.Rdata")
+}
+
+names(GIP_W49_V2)
+
+core <- GIP_W49_V2
+
+# gender
+frq(GIP_W49_V2$gender_20)
+core$gender <- fct_collapse(core$gender_20,
+                            "male" = "1. mÃ¤nnlich",
+                            "female" = "2. weiblich",
+                            NULL = c("-97. trifft nicht zu",
+                                     "-91. 'bitte wÃ¤hlen'-Platzhalter",
+                                     "-90. item nonresponse",
+                                     "-80. Wert nicht plausibel")) 
+frq(core$gender)
+
+# age
+frq(core$year_of_birth_cat_20)
+
+core$age <- fct_collapse(core$year_of_birth_cat_20,
+                         "76-85" = c("1. 1935-1939",
+                                     "2. 1940-1944"),
+                         "66-75" = c("3. 1945-1949",
+                                     "4. 1950-1954"),
+                         "56-65" = c("5. 1955-1959",
+                                     "6. 1960-1964"),
+                         "46-55" = c("7. 1965-1969",
+                                     "8. 1970-1974"),
+                         "36-45" = c("9. 1975-1979",
+                                     "10. 1980-1984"),
+                         "26-35" = c("11. 1985-1989",
+                                     "12. 1990-1994"),
+                         "16-25" = c("13. 1995-1999",
+                                     "14. 2000 und spÃ¤ter"),
+                         NULL = c("-97. trifft nicht zu",
+                                  "-91. 'bitte wÃ¤hlen'-Platzhalter",
+                                  "-90. item nonresponse",
+                                  "-80. Wert nicht plausibel"))
+frq(core$age)
+
+# education
+frq(core$educ_school_20)
+
+core$education <- fct_collapse(core$educ_school_20,
+                               "low" = c("2. Schule beendet ohne Abschluss",
+                                         "3. Volks-/Hauptschulabschluss bzw. Polytechnische Oberschule mit Abschluss 8. oder 9. Klasse"),
+                               "mid" = "4. Mittlere Reife, Realschulabschluss bzw. Polytechnische Oberschule mit Abschluss 10. Klasse", 
+                               "high1" = "5. Fachhochschulreife (Abschluss einer Fachoberschule etc.)",
+                               "high2" = "6. Abitur bzw. Erweiterte Oberschule mit Abschluss 12. Klasse (Hochschulreife)",
+                               "other" = "7. Anderen Schulabschluss: Bitte tragen Sie Ihren Schulabschluss ein: __________________",
+                               NULL = c("1. Noch SchÃ¼ler/-in",
+                                        "-97. trifft nicht zu",
+                                        "-91. 'bitte wÃ¤hlen'-Platzhalter",
+                                        "-90. item nonresponse",
+                                        "-80. Wert nicht plausibel"))
+
+frq(core$education)
+
+core <- core %>% 
+  select(id_g, gender, age, education)
+
+# join recoded core data to main dataframe
+data <- left_join(data, core, by = "id_g")
+
+summary(data)

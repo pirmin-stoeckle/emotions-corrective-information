@@ -221,7 +221,7 @@ With regard to the factual belief that GM food is safe to eat, the sample is ske
 
 ## Moralization through misinformation {-}
 
-```{r, echo = FALSE}
+```{r main-analysis, echo = FALSE}
 # linear regression models with 0-1 rescaled DV
 lm_knowledge_safe <- lm(rescale(knowledge_safe) ~ exp_group, data)
 lm_policy_opinion <- lm(rescale(policy_opinion) ~ exp_group, data)

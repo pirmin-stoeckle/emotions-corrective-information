@@ -45,6 +45,16 @@ library(scales)
 library(knitr)
 ```
 
+\newpage
+# To Do
+
+- To what audience should the paper be framed / be the focus of the theoretical discussion? (Probably misinformation and corrective information, but it may also be necessary to engage a bit more with literature on moralization of issues, and emotions and information processing)
+- Closer link of theory and empirical expecations, e.g. from affective intelligence theory or cognitive appraisal approaches. There probably is an interesting tension here: emotion of disgust should lead to less engagement with following information because of a general averse reaction of "get away from me", whereas emotion of anxiety should lead to a closer processing of incoming information. In real life, anxiety and disgust may often go together, as happens empirically in the experiment.
+- Analysis: what about treatment heterogeneity? There is a pre-attitude item here to exploit, and also possible other variables from previous GIP panel waves
+- Analysis: mabe show the moderation effect of the emotional frame directly
+- For the discussion and further avenues: What role do elite cues play in all of that? So, e.g., political elits may work with strong emotion in framing disinformation, but the scientific / fact-checking elites do not use strong emotions in their communication (is that true empirically?)
+- Exploratory: there are also ambivalence items and an information search item, which are not yet part of the paper
+
 
 \newpage
 # Introduction

@@ -313,6 +313,7 @@ ggplot(pdata_h1, aes(x = outcome, y = estimate, color = "1")) +
 #sjPlot::save_plot("./figures/p_h1.png", width = 24, height = 16)
 
 ```
+![p_h1](https://user-images.githubusercontent.com/49069412/179274284-155b24ef-33e3-4d2c-bc6d-2c9d16fba174.png)
 
 First, \@ref(fig:misinfo-only) reports the effects of receiving only the misinformation message. The upper half of the figure shows two plots with the effects of the low emotion misinformation and the lower half shows two plots with the effects of the high emtoion misinformation message. The y-axis indicates the different outcome variables, and the x-axis indicates the effect size relative to the control group, which serves as the reference category for all models. 
 

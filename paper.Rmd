@@ -310,12 +310,11 @@ ggplot(pdata_h1, aes(x = outcome, y = estimate, color = "1")) +
          linetype = guide_legend(reverse = TRUE),
          shape = guide_legend(reverse = TRUE))
 
-#sjPlot::save_plot("./figures/p_h1.png", width = 24, height = 16)
+sjPlot::save_plot("./p_h1.png", width = 24, height = 16)
+```
 
-```
-```
-![p_h1](https://user-images.githubusercontent.com/49069412/179274284-155b24ef-33e3-4d2c-bc6d-2c9d16fba174.png)
-```
+![p_h1](./p_h1.png)
+
 First, \@ref(fig:misinfo-only) reports the effects of receiving only the misinformation message. The upper half of the figure shows two plots with the effects of the low emotion misinformation and the lower half shows two plots with the effects of the high emtoion misinformation message. The y-axis indicates the different outcome variables, and the x-axis indicates the effect size relative to the control group, which serves as the reference category for all models. 
 
 In the top row of the lower right panel, we see the largest effect, which results from the high emotional frame on the factual belief outcome. Respondents receiving the high emotional misinformation about GM food agree to the statement that GM food is safe to eat with a score that is 16 percentage points less than the control group. For the low emotion misinformation, the effect is 13 percentage points, indicating that both messages are persuasive in bringing the average factual belief farther from the scientific consensus belief.
@@ -374,9 +373,12 @@ ggplot(pdata_neutral_correction, aes(x = outcome, y = estimate, color = correcti
          linetype = guide_legend(reverse = TRUE),
          shape = guide_legend(reverse = TRUE))
 
+sjPlot::save_plot("./p_neutral_correction.png", width = 24, height = 16)
+
 #sjPlot::save_plot("./figures/p_neutral_correction.png", width = 24, height = 16)
 ```
 
+![p_neutral_correction](p_neutral_correction.png)
 After having established that a persuasive, emotionally framed message containing misinformation can influence policy opinion and increase moral conviction, I now report the results of the neutral correction in figure \@ref(fig:neutral-correction). The neutral correction is effective for the low emotion misinformation, but not the high emotion misinformation. The emotional frame of the misinformation therefore moderates the correcion effectiveness. Although weakened, the effects on policy opinion and moral conviction induced by the high emotion misinformation persist after the correction, confirming H2b. Even if the correction significantly moves the factual belief after the high emotion misinformation, there still persists an effect of the misinformation relative to the control group. The correction is therefore not successful in eradicating the misinformation effect, which rejects H2a. In sum, there is no belief echo, but a moderation of the correction effectiveness.
 
 
@@ -436,9 +438,11 @@ ggplot(pdata_counter_frame, aes(x = outcome, y = estimate, color = correction, s
          linetype = guide_legend(reverse = TRUE),
          shape = guide_legend(reverse = TRUE))
 
-#sjPlot::save_plot("./figures/p_counter_frame.png", width = 24, height = 16)
+sjPlot::save_plot("./p_counter_frame.png", width = 24, height = 16)
 
 ```
+
+![p_counter_frame1](./p_counter_frame.png)
 
 Finally, results from the counterframe message show that a correction embedded in a persuasive positive frame is successful in bringing all outcome measures to the control group level (see figure \@ref(fig:counterframe)). 
 It should be noted, however, that there is also no positive effect of the positively framed message on beliefs and opinions towards GM food, although the counterframe message itself is persuasive (figure \@ref(fig:info-only) in the appendix). On average, the two competitive frames seem to cancel each other out. This points to a challenge for science communication within an information environment in which accurate information (even if persuasive) has to compete with inaccurate or misleading information.
@@ -537,10 +541,10 @@ ggplot(pdata_info_effect, aes(x = outcome, y = estimate, color = fct_rev(group),
          linetype = guide_legend(reverse = TRUE),
          shape = guide_legend(reverse = TRUE))
 
-#sjPlot::save_plot("./figures/p_info_effect.png", width = 24, height = 9)
+sjPlot::save_plot("./p_info_effect.png", width = 24, height = 9)
 
 ```
-
+![p_info_effect](./p_info_effect.png)
 \newpage
 
 ## Regression tables
@@ -595,7 +599,7 @@ modelsummary(models,
 ## Treatment material
 
 ```{r screenshot-low-misinfo, fig.align = 'center', out.width = "100%", fig.cap = "Low emotion misinformation", echo = FALSE}
-knitr::include_graphics("./figures/misinfo_low_emotion.png")
+knitr::include_graphics("./misinfo_low_emotion.png")
 ```
 
 ```{r screenshot-high-misinfo, fig.align = 'center', out.width = "100%", fig.cap = "High emotion misinformation", echo = FALSE}
@@ -603,7 +607,7 @@ knitr::include_graphics("./figures/misinfo_high_emotion.png")
 ```
 
 ```{r screenshot-neutral-correction, fig.align = 'center', out.width = "100%", fig.cap = "Neutral correction", echo = FALSE}
-knitr::include_graphics("./figures/neutral_correction.png")
+knitr::include_graphics("./neutral_correction.png")
 ```
 
 ```{r screenshot-counterframe, fig.align = 'center', out.width = "100%", fig.cap = "Counterframe correction", echo = FALSE}

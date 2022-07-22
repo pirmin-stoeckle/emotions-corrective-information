@@ -13,13 +13,18 @@ rm(list = ls())
 # https://dbk.gesis.org/dbksearch/GDesc2.asp?no=0109&tab=&ll=10&notabs=1&db=E
 
 # if data is already on hard drive, load into workspace
-if(file.exists(here("GIP_W53_V1.RData"))) {
-load(here("GIP_W53_V1.RData"))
-}
+#if(file.exists(here("GIP_W53_V1.RData"))) {
+#load(here("GIP_W53_V1.RData"))
+#}
 
 # if data is not in the workspace, load from internal data release
+#if(!exists("GIP_W53_V1")) {
+#  load("//sfb884-share.ad.uni-mannheim.de/data$/2_Data/data_for_R_users/GIP_W53_V1.Rdata")
+#}
+
 if(!exists("GIP_W53_V1")) {
-  load("//sfb884-share.ad.uni-mannheim.de/data$/2_Data/data_for_R_users/GIP_W53_V1.Rdata")
+  load("/Volumes/data$/2_Data/data_for_R_users/GIP_W53_V1.Rdata")
+  
 }
 
 # put into data object for more intuitive handling while leacing the raw data intact
@@ -194,15 +199,18 @@ data <- subset(data, select= c(id_g, pre_attitude:info_search))
 ############################
 
 # if data is already on hard drive, load into workspace
-if(file.exists(here("GIP_W49_V21.RData"))) {
-  load(here("GIP_W49_V2.RData"))
-}
+#if(file.exists(here("GIP_W49_V21.RData"))) {
+#  load(here("GIP_W49_V2.RData"))
+#}
 
 # if data is not in the workspace, load from internal data release
+#if(!exists("GIP_W49_V21")) {
+#  load("//sfb884-share.ad.uni-mannheim.de/data$/2_Data/data_for_R_users/GIP_W49_V2.Rdata")
+#}
 if(!exists("GIP_W49_V21")) {
-  load("//sfb884-share.ad.uni-mannheim.de/data$/2_Data/data_for_R_users/GIP_W49_V2.Rdata")
+  load("/Volumes/data$/2_Data/data_for_R_users/GIP_W49_V2.Rdata")
+  
 }
-
 names(GIP_W49_V2)
 
 core <- GIP_W49_V2
